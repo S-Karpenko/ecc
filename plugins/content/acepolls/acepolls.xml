@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="1.6" group="content" method="upgrade">
+	<name>Content - Load AcePolls</name>
+	<author>JoomAce LLC</author>
+	<creationDate>10 February 2011</creationDate>
+	<copyright>2009-2011 JoomAce LLC</copyright>
+	<license>GNU GPL</license>
+	<authorEmail>info@joomace.net</authorEmail>
+	<authorUrl>www.joomace.net</authorUrl>
+	<version>1.0.0</version>
+	<description>Display any poll into any article by using this syntax: {acepolls ID}</description>
+	<files>
+		<filename plugin="acepolls">acepolls.php</filename>
+		<filename>index.html</filename>
+	</files>
+</extension>

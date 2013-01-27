@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.6.0" method="upgrade">
+	<name>AcePolls</name>
+	<author>JoomAce LLC</author>
+	<creationDate>03 October 2011</creationDate>
+	<copyright>2009-2011 JoomAce LLC</copyright>
+	<license>GNU/GPL, http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>info@joomace.net</authorEmail>
+	<authorUrl>www.joomace.net</authorUrl>
+	<version>1.0.8</version>
+	<description>AcePolls is a simple and flexible component for voting. It shows vote results in 2 types, a nice pie chart or default Joomla way.</description>
+	
+	<files folder="site">
+		<filename>acepolls.php</filename>
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>jomsocial_rule.xml</filename>
+		<filename>router.php</filename>
+		<folder>models</folder>
+		<folder>views</folder>
+	</files>
+	<languages folder="languages/site">
+		<language tag="en-GB">en-GB.com_acepolls.ini</language>
+	</languages>
+
+    <media folder="media" destination="acepolls">
+        <folder>js</folder>
+        <folder>swf</folder>
+        <folder>images</folder>
+    </media>
+
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu img="../media/acepolls/images/acepolls.png" link="option=com_acepolls">COM_ACEPOLLS</menu>
+		<submenu>
+			<menu link="option=com_acepolls&amp;controller=polls">COM_ACEPOLLS_POLLS</menu>
+			<menu link="option=com_acepolls&amp;controller=votes">COM_ACEPOLLS_VOTES</menu>
+		</submenu>	
+		<files folder="admin">
+			<!-- Site Main File Copy Section -->
+			<filename>acepolls.php</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>toolbar.acepolls.php</filename>
+			<folder>assets</folder>
+			<folder>elements</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+		</files>
+		
+		<languages folder="languages/admin">
+			<language tag="en-GB">en-GB.com_acepolls.ini</language>
+			<language tag="en-GB">en-GB.com_acepolls.sys.ini</language>
+		</languages>		
+	</administration>
+	
+	<installfile>install.php</installfile>
+	<uninstallfile>uninstall.php</uninstallfile>
+	
+	<updateservers>
+		<server type="extension" priority="1" name="AcePolls Updates">http://www.joomace.net/j16_updates.xml</server>
+	</updateservers>
+</extension>

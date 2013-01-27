@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <fieldset name="component" label="COM_ACEPOLLS_PARAMS_GENERAL">
+		<field name="only_registered" type="radio" default="0" label="COM_ACEPOLLS_ONLY_REGISTERED" description="COM_ACEPOLLS_ONLY_REGISTERED_DESC">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>		
+		<field name="one_vote_per_user" type="radio" default="1" label="COM_ACEPOLLS_ONE_VOTE_PER_USER" description="COM_ACEPOLLS_ONE_VOTE_PER_USER_DESC">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="ip_check" type="radio" default="0" label="COM_ACEPOLLS_ONE_VOTE_PER_IP" description="COM_ACEPOLLS_ONE_VOTE_PER_IP_DESC">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="show_component_msg" type="radio" default="1" label="COM_ACEPOLLS_SHOW_MSG" description="COM_ACEPOLLS_SHOW_MSG_DESC">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="allow_voting" type="radio" default="1" label="COM_ACEPOLLS_ALLOW_VOTING" description="COM_ACEPOLLS_ALLOW_VOTING_DESC">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="show_comments" type="list" default="1" label="COM_ACEPOLLS_SHOW_COMMENTS" description="COM_ACEPOLLS_SHOW_COMMENTS_DESC">
+			<option value="0">No</option>
+			<option value="1">JComments</option>
+			<option value="2">JomComment</option>
+			<option value="3">JXtended Comments</option>
+			<option value="4">JA Comments</option>
+		</field>
+	</fieldset>
+	<fieldset name="results" label="COM_ACEPOLLS_RESULTS">
+		<field name="show_what" type="list" default="1" label="COM_ACEPOLLS_SHOW_RESULTS_AS" description="COM_ACEPOLLS_SHOW_RESULTS_AS_DESC">
+			<option value="0">COM_ACEPOLLS_JOOMLA_DEFAULT_WAY</option>
+			<option value="1">COM_ACEPOLLS_PIE_CHART</option>
+		</field>
+		<field name="show_hits" type="radio" default="1" label="COM_ACEPOLLS_SHOW_HITS" description="COM_ACEPOLLS_SHOW_HITS_DESC">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>		
+		<field name="show_voters" type="radio" default="1" label="COM_ACEPOLLS_SHOW_VOTERS" description="COM_ACEPOLLS_SHOW_VOTERS_DESC">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="show_times" type="radio" default="1" label="COM_ACEPOLLS_SHOW_TIMES" description="COM_ACEPOLLS_SHOW_TIMES_DESC">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>		
+		<field name="show_dropdown" type="radio" default="1" label="COM_ACEPOLLS_SHOW_DROPDOWN" description="COM_ACEPOLLS_SHOW_DROPDOWN_DESC">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+	</fieldset>
+	<fieldset name="pie" label="COM_ACEPOLLS_PARAMS_PIE">
+		<field name="opacity" type="text" default="90" label="COM_ACEPOLLS_PIE_TRANSPARANCY" description="COM_ACEPOLLS_PIE_TRANSPARANCY_DESC" size="2" />
+		<field name="bg_color" type="text" default="ffffff" label="COM_ACEPOLLS_PIE_BACKGROUND_COLOR" description="COM_ACEPOLLS_PIE_BACKGROUND_COLOR_DESC" size="6" />
+		<field name="circle_color" type="text" default="505050" label="COM_ACEPOLLS_PIE_CIRCLE_COLOR" description="COM_ACEPOLLS_PIE_CIRCLE_COLOR_DESC" size="6" />
+		<field name="pieX" type="text" default="100%" label="COM_ACEPOLLS_PIE_WIDTH" description="COM_ACEPOLLS_PIE_WIDTH_DESC" size="3" />
+		<field name="pieY" type="text" default="400" label="COM_ACEPOLLS_PIE_HEIGHT" description="COM_ACEPOLLS_PIE_HEIGHT_DESC" size="3" />
+		<field name="start_angle" type="text" default="55" label="COM_ACEPOLLS_PIE_START_ANGLE" description="COM_ACEPOLLS_PIE_START_ANGLE_DESC" size="3" />
+		<field name="radius" type="text" default="150" label="COM_ACEPOLLS_PIE_RADIUS" description="COM_ACEPOLLS_PIE_RADIUS_DESC" size="3" />
+		<field name="gradient" type="radio" default="1" label="COM_ACEPOLLS_PIE_GRADIENT" description="COM_ACEPOLLS_PIE_GRADIENT_DESC" size="3">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>		
+		<field name="no_labels" type="radio" default="0" label="COM_ACEPOLLS_PIE_SHOW_LABELS" description="COM_ACEPOLLS_PIE_SHOW_LABELS_DESC" size="3">
+			<option value="0">JYES</option>
+			<option value="1">JNO</option>
+		</field>
+		<field name="show_zero_votes" type="radio" default="1" label="COM_ACEPOLLS_PIE_SHOW_ZERO_VOTES" description="COM_ACEPOLLS_PIE_SHOW_ZERO_VOTES_DESC" size="3">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="animation_type" type="list" default="bounce" label="COM_ACEPOLLS_PIE_ANIMATION" description="COM_ACEPOLLS_PIE_ANIMATION_DESC" size="3">
+			<option value="bounce">COM_ACEPOLLS_PIE_BOUNCE</option>
+			<option value="fade">COM_ACEPOLLS_PIE_FADE</option>
+		</field>
+		<field name="bounce_dinstance" type="text" default="30" label="COM_ACEPOLLS_PIE_BOUNCE_DINSTANCE" description="COM_ACEPOLLS_PIE_BOUNCE_DINSTANCE_DESC" size="3" />
+		<field name="bg_image" type="imagelist" default="0" label="COM_ACEPOLLS_PIE_BACKGROUND_IMAGE" description="COM_ACEPOLLS_PIE_BACKGROUND_IMAGE_DESC" directory="images/" hide_default="true" />
+		<field name="bg_image_x" type="list" default="left" label="COM_ACEPOLLS_PIE_X_POSITION" description="COM_ACEPOLLS_PIE_X_POSITION_DESC" size="3">
+			<option value="left">COM_ACEPOLLS_PIE_LEFT</option>
+			<option value="center">COM_ACEPOLLS_PIE_CENTER</option>
+			<option value="right">COM_ACEPOLLS_PIE_RIGHT</option>
+		</field>	
+		<field name="bg_image_y" type="list" default="top" label="COM_ACEPOLLS_PIE_Y_POSITION" description="COM_ACEPOLLS_PIE_Y_POSITION_DESC" size="3">
+			<option value="top">COM_ACEPOLLS_PIE_TOP</option>
+			<option value="middle">COM_ACEPOLLS_PIE_MIDDLE</option>
+			<option value="bottom">COM_ACEPOLLS_PIE_BOTTOM</option>
+		</field>	
+		<field name="font_size" type="text" default="11" label="COM_ACEPOLLS_PIE_FONT_SIZE_LABELS" description="COM_ACEPOLLS_PIE_FONT_SIZE_LABELS_DESC" size="3" />
+		<field name="font_color" type="text" default="404040" label="COM_ACEPOLLS_PIE_FONT_COLOR_LABELS" description="COM_ACEPOLLS_PIE_FONT_COLOR_LABELS_DESC" size="6" />
+		<field name="title_lenght" type="text" default="30" label="COM_ACEPOLLS_PIE_OPTIONS_LENGHT" description="COM_ACEPOLLS_PIE_OPTIONS_LENGHT_DESC" size="3" />
+	</fieldset>
+	<fieldset name="joomla" label="COM_ACEPOLLS_PARAMS_JOOMLA">
+		<field name="chartX" type="text" default="100%" label="COM_ACEPOLLS_CHART_WIDTH" description="COM_ACEPOLLS_CHART_WIDTH_DESC" size="3" />
+		<field name="optionsFontSize" type="text" default="12" label="COM_ACEPOLLS_CHART_OPTIONS_FONT_SIZE" description="COM_ACEPOLLS_CHART_OPTIONS_FONT_SIZE_DESC" size="3" />
+		<field name="barHeight" type="text" default="15" label="COM_ACEPOLLS_CHART_HEIGHT_OF_BARS" description="COM_ACEPOLLS_CHART_HEIGHT_OF_BARS_DESC" size="3" />
+		<field name="barBorder" type="text" default="1px solid #000000" label="COM_ACEPOLLS_CHART_BARBORDER" description="COM_ACEPOLLS_CHART_BARBORDER_DESC" size="20" />
+		<field name="bgBarColor" type="text" default="f5f5f5" label="COM_ACEPOLLS_CHART_BGBARCOLOR" description="COM_ACEPOLLS_CHART_BGBARCOLOR_DESC" size="6" />
+		<field name="bgBarBorder" type="text" default="1px solid #cccccc" label="COM_ACEPOLLS_CHART_BGBARBORDER" description="COM_ACEPOLLS_CHART_BGBARBORDER_DESC" size="20" />
+	</fieldset>
+</config>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jomsocial>
+    <component>com_acepolls</component>
+    <rules>
+        <rule>
+            <name>AcePolls - Vote on a poll</name>
+            <description>Give points when user votes on polls.</description>
+            <action_string>com_acepolls.vote</action_string>
+            <publish>true</publish>
+            <points>0</points>
+            <access_level>1</access_level>
+        </rule>
+    </rules>
+</jomsocial>

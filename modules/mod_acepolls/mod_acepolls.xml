@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6.0" client="site" method="upgrade">
+	<name>AcePolls</name>
+	<author>JoomAce LLC</author>
+	<creationDate>23 January 2011</creationDate>
+	<copyright>2009-2011 JoomAce LLC</copyright>
+	<license>GNU/GPL, http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>info@joomace.net</authorEmail>
+	<authorUrl>www.joomace.net</authorUrl>
+	<version>1.0.0</version>
+	<description>AcePolls module for voting</description>
+	<files>
+		<filename module="mod_acepolls">mod_acepolls.php</filename>
+		<filename module="mod_acepolls">index.html</filename>
+		<filename module="mod_acepolls">helper.php</filename>
+		<folder module="mod_acepolls">tmpl</folder>
+	</files>
+	<languages folder="languages">
+		<language tag="en-GB">en-GB.mod_acepolls.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+				<field type="spacer" />
+				<field name="id" type="text" default="" label="MOD_ACEPOLLS_POLL_ID" description="MOD_ACEPOLLS_POLL_ID_DESC" />
+				<field name="ajax" type="radio" default="0" label="MOD_ACEPOLLS_AJAX_VOTE" description="MOD_ACEPOLLS_AJAX_VOTE_DESC">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="show_poll_title" type="radio" default="1" label="MOD_ACEPOLLS_SHOW_POLL_TITLE" description="MOD_ACEPOLLS_SHOW_POLL_TITLE_DESC">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field type="spacer" />
+				<field name="only_one_color" type="radio" default="0" label="MOD_ACEPOLLS_ONLY_ONE_COLOR" description="MOD_ACEPOLLS_ONLY_ONE_COLOR_DESC">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="poll_bars_color" type="text" default="cccccc" size="7" label="MOD_ACEPOLLS_BARS_COLOR" description="MOD_ACEPOLLS_BARS_COLOR_DESC" />		
+				<field name="poll_bars_border_color" type="text" default="cccccc" size="7" label="MOD_ACEPOLLS_BARS_BORDER_COLOR" description="MOD_ACEPOLLS_BARS_BORDER_COLOR_DESC" />	
+				<field type="spacer" />
+				<field name="show_view_details" type="radio" default="1" label="MOD_ACEPOLLS_SHOW_VIEW_DETAILS" description="MOD_ACEPOLLS_SHOW_VIEW_DETAILS_DESC">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="show_rel_article" type="radio" default="1" label="MOD_ACEPOLLS_SHOW_REL_ARTICLE" description="MOD_ACEPOLLS_SHOW_REL_ARTICLE_DESC">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="rel_article" type="text" default="http://www.joomace.net" size="40" label="MOD_ACEPOLLS_RELATED_ARTICLE_LINK" description="MOD_ACEPOLLS_RELATED_ARTICLE_LINK_DESC" />
+				<field name="rel_article_window" type="radio" default="_self" label="MOD_ACEPOLLS_IN_NEW_WINDOW" description="MOD_ACEPOLLS_IN_NEW_WINDOW_DESC">
+					<option value="_blank">Yes</option>
+					<option value="_self">No</option>
+				</field>
+				<field type="spacer" />
+				<field name="show_total" type="radio" default="1" label="MOD_ACEPOLLS_SHOW_TOTAL" description="MOD_ACEPOLLS_SHOW_TOTAL_DESC">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>	
+				<field name="show_msg" type="radio" default="1" label="MOD_ACEPOLLS_SHOW_MESSAGES" description="MOD_ACEPOLLS_SHOW_MESSAGES_DESC">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>	
+				<field name="show_detailed_msg" type="radio" default="1" label="MOD_ACEPOLLS_SHOW_DETAILED_MESSAGES" description="MOD_ACEPOLLS_SHOW_DETAILED_MESSAGES_DESC">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>	
+				<field name="msg_date_format" type="text" default="%d %b %Y - %H:%M	" size="25" label="MOD_ACEPOLLS_MSG_DATE_FORMAT" description="MOD_ACEPOLLS_MSG_DATE_FORMAT_DESC" />
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this module">
+					<option value="1">Use global</option>
+					<option value="0">No caching</option>
+				</field>
+				<field name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

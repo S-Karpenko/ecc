@@ -38,7 +38,17 @@ $app = JFactory::getApplication();
 
 		<!-- The following line loads the template JavaScript file located in the template folder. It's blank by default. -->
 		<script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/template.js"></script>
-	</head>
+        <script type="text/javascript">
+            var mcSite = '16802';
+            (function() {
+                var mc = document.createElement('script');
+                mc.type = 'text/javascript';
+                mc.async = true;
+                mc.src = 'http://cackle.me/mc.count-min.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(mc);
+            })();
+        </script>
+    </head>
 
     <body>
         <div class="header">
@@ -65,6 +75,16 @@ $app = JFactory::getApplication();
             <div class="content">
 			    <jdoc:include type="message" />
 			    <jdoc:include type="component" />
+                <div class="map">
+                    <?php if ($this->countModules('position-2')): ?>
+                    <jdoc:include type="modules" name="position-2" style="none" />
+                    <?php endif; ?>
+                </div>
+                <div class="form">
+                    <?php if ($this->countModules('position-3')): ?>
+                    <jdoc:include type="modules" name="position-3" style="none" />
+                    <?php endif; ?>
+                </div>
             </div>
 
             <div class="sidebar">
@@ -79,8 +99,8 @@ $app = JFactory::getApplication();
                     <?php endif; ?>
                 </div>
                 <div class="widjet voting">
-                    <?php if ($this->countModules('position-')): ?>
-                    <jdoc:include type="modules" name="position-" style="none" />
+                    <?php if ($this->countModules('position-8')): ?>
+                    <jdoc:include type="modules" name="position-8" style="none" />
                     <?php endif; ?>
                 </div>
             </div>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="plugin" group="acepolls" method="upgrade">
+	<name>AcePolls - JomSocial</name>
+	<author>JoomAce LLC</author>
+	<creationDate>February 2011</creationDate>
+	<copyright>(C) 2009-2011 JoomAce LLC</copyright>
+	<license>GNU/GPL, http://www.joomace.net/company/license</license>
+	<authorEmail>info@joomace.net</authorEmail>
+	<authorUrl>www.joomace.net</authorUrl>
+	<version>1.0.0</version>
+	<description>AcePolls - JomSocial plugin.</description>
+	<files>
+		<filename plugin="jomsocial">jomsocial.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="points" type="radio" default="0" label="Enable Points System" description="Enable Points System">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="activity" type="radio" default="0" label="Enable Activity Stream" description="Enable Activity Stream">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

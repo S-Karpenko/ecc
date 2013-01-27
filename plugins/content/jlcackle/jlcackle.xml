@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content" method="upgrade">
+	<name>JoomLine Cackle</name>
+	<author>JoomLine</author>
+	<creationDate>Nov 2011</creationDate>
+	<copyright>(C) 2011 by Kunicin Vadim(http://www.joomline.ru)</copyright>
+	<license>GNU/GPL: http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>vadim@joomline.ru</authorEmail>
+	<authorUrl>http://joomline.ru</authorUrl>
+	<version>2.2</version>
+	<description>PLG_JLCACKLE_DES1</description>
+	<files>
+		<filename plugin="jlcackle">jlcackle.php</filename>
+		<filename>index.html</filename>
+		<folder>language</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="apiId" type="text" label="PLG_JLCACKLE_IDSITE_LABEL" description="PLG_JLCACKLE_IDSITE_DESC" default="IDsite"/>
+				<field name="autoAdd" type="radio" default="0" label="PLG_JLCACKLE_AUTOADD_LABEL" description="PLG_JLCACKLE_AUTOADD_DESC">
+				  <option value="0">PLG_JLCACKLE_NO</option>
+				  <option value="1">PLG_JLCACKLE_YES</option>
+				</field>
+				<field name="providers" type="textarea" rows="5" cols="50" label="PLG_JLCACKLE_PROVIDERS_LABEL" description="PLG_JLCACKLE_PROVIDERS_DESC" default="google;googleplus;vkontakte;facebook;twitter;yandex;yahoo;mymailru;odnoklassniki;mailru;rambler;myopenid;livejournal;flickr;wordpress;blogger;verisign;"/>
+				<field name="categories" type="category" extension='com_content' default="0" multiple="multiple" label="PLG_JLCACKLE_EXCLUDE_CATEGORY_LABEL" description="PLG_JLCACKLE_EXCLUDE_CATEGORY_DESC"/>
+				 <!-- <field name="offindex" type="radio" default="0" label="PLG_JLCACKLE_OFF_INDEX" description="PLG_JLCACKLE_OFF_INDEX_DESC"> 
+-				  <option value="0">PLG_JLCACKLE_NO</option>
+-				  <option value="1">PLG_JLCACKLE_YES</option>
+-			    </field>-->
+                <field name="jqtrue" type="radio" default="true" label="PLG_JLCACKLE_JQ" description="PLG_JLCACKLE_JQ_DESC">
+				  <option value="true">PLG_JLCACKLE_NO</option>
+				  <option value="false">PLG_JLCACKLE_YES</option>
+			    </field>
+               
+            </fieldset>
+		</fields>
+	</config>
+</extension>
