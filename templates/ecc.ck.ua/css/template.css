@@ -1,0 +1,81 @@
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+html,body                       { width:100%; height:100%; }
+body                            { padding:0; margin:0; font:12px Tahoma, sans-serif; background:url(../images/straws.png); color:#000; }
+div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,checkbox,input,textarea {
+    padding:0;
+    margin:0;
+    outline:none;
+    list-style:none;
+}
+select, input, textarea        { font-size:12px; vertical-align:middle; }
+textarea                       { vertical-align:top; }
+:focus                         { outline:none; }
+input[type=submit]             { cursor:pointer; }
+img, fieldset                  { border:0; }
+table                          { border-collapse:collapse; border-spacing:0; }
+a:link, a:visited              { font:12px Tahoma, sans-serif; color:#000; text-decoration:none; }
+a:hover                        { text-decoration:none; }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------DEFAULT CLASSES------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.float-r           	           { float:right !important; }
+.float-l                       { float:left !important; }
+.no-float                      { float:none !important; }
+.no-border                     { border:0 !important; }
+.no-bg                         { background:none !important; }
+.no-margin                     { margin:0 !important; }
+.no-padding                    { padding:0 !important; }
+.no-display                    { display:none !important; }
+.display                       { display:block !important; }
+.inline                        { display:inline !important; }
+.overflow                      { overflow:hidden !important; }
+.align-r                       { text-align:right !important; }
+.align-l                       { text-align:left !important; }
+.align-c                       { text-align:center !important; }
+.clear                         { clear:both; }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------WRAPPER--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.wrapper { width:980px; margin:0 auto;}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------HEADER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.header { height:170px; padding-top:10px;}
+.header a img { text-indent:-1000em; }
+.header ul { float:right;}
+.header ul li { float:left;}
+.header ul li a { display:block; width:20px; height:20px; padding:5px; background-color:#033; text-indent:-1000em; margin: 50px 0 0 20px;}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------NAV------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.navbar {position:relative; margin-bottom:10px;}
+.navbar ul { height:38px; background-color:#7BAD38;}
+.navbar ul li a {padding:10px 20px; border:1px solid #000; display:block; margin-right:1px; background-color:#86BD3D; border-color:#7BAD38;}
+.navbar ul li a.about { margin-right:0; }
+.navbar ul li { float:left; position:relative;}
+.navbar ul li ul { display:none;}
+.navbar li ul { position:absolute;}
+.navbar li:hover ul { display: block; position:absolute; }
+.navbar ul.joomla-nav li a.ikc { padding:10px 33px;}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------CONTENT--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.conteiner {clear:both;  margin-bottom:10px;}
+
+.content { height:1000px; width:690px; background-color:#009933; float:left; margin:0 20px 0 0;  padding:10px 0 0 10px;}
+.content .post { width:680px; height:320px; background-color:#0F9; margin-bottom:10px;}
+
+/*- ---------------------------------------------------------------------------------*/
+/*-------------------------------------SIDEBAR--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.sidebar { float:right;}
+.sidebar .widjet{ width:260px; height:250px;}
+.sidebar .calendar { background-color:#999; margin-bottom:10px;}
+.sidebar .partners { background-color:#333; margin-bottom:10px;}
+.sidebar .voting { background-color:#CCC;}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FOOTER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.footer { clear:both; height:70px; background-color:#033;}
