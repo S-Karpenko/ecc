@@ -12,13 +12,7 @@ class JConfig {
 	public $debug = '0';
 	public $debug_lang = '0';
 	public $dbtype = 'mysqli';
-	public $host = 'localhost';
-	public $user = 'root';
-	public $password = 'root';
-	public $db = 'ecc';
-	public $dbprefix = 'ehg69_';
-	public $live_site = '';
-	public $secret = 'ML1FnkOEvfWvFXOw';
+	
 	public $gzip = '0';
 	public $error_reporting = 'default';
 	public $helpurl = 'http://help.joomla.org/proxy/index.php?option=com_help&amp;keyref=Help{major}{minor}:{keyref}';
