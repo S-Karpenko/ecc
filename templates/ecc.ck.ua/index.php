@@ -37,29 +37,29 @@ $app = JFactory::getApplication();
 		<?php endif; ?>
 
 		<!-- The following line loads the template JavaScript file located in the template folder. It's blank by default. -->
-		<script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/template.js"></script>
-        <script type="text/javascript">
-            var mcSite = '16802';
-            (function() {
-                var mc = document.createElement('script');
-                mc.type = 'text/javascript';
-                mc.async = true;
-                mc.src = 'http://cackle.me/mc.count-min.js';
-                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(mc);
-            })();
-        </script>
+
     </head>
 
     <body>
+    <div class="bg_blue"></div>
+    <div class="wrapper">
         <div class="header">
-            <a href="index.php" title="Experimental Creative Center"><img src="images/logo.png" width="225" height="156" alt="Experimental Creative Center" /></a>
-            <ul class="social">
+            <a href="index.php" title="Experimental Creative Center"><img src="../../images/logo.png" width="225" height="156" alt="Experimental Creative Center" /></a>
+            <!--<ul class="social">
                 <li><a class="fb" href="#" title="Facebook">Facebook</a></li>
                 <li><a class="vk" href="#" title="Vkontakte">Vkontakte</a></li>
                 <li><a class="tw" href="#" title="Twitter">Twitter</a></li>
                 <li><a class="yt" href="#" title="YouTube">Youtube</a></li>
                 <li><a class="vm" href="#" title="Vimeo">Vimeo</a></li>
-            </ul>
+            </ul>-->
+        </div>
+        <div class="buttons">
+            <a id="facebook-button" class="fly-button" target="_blank" href="https://www.facebook.com/profile.php?id=100002089503948"></a>
+            <a id="twitter-button" class="fly-button" target="_blank" href="https://twitter.com/S_Karpo"></a>
+            <a id="vkontakte-button" class="fly-button" target="_blank" href="http://vk.com/s.karpo"></a>
+            <a id="odnoklassniki-button" class="fly-button" target="_blank" href="#"></a>
+            <a id="youtube-button" class="fly-button" target="_blank" href="#"></a>
+
         </div>
 
     <!--navigation-->
@@ -68,50 +68,71 @@ $app = JFactory::getApplication();
                 <jdoc:include type="modules" name="position-1" style="none" />
             <?php endif; ?>
         </div>
-    <!--conteiner-->
+    <!--share social
+        <div class="lrsharecontainer">
+            <script type="text/javascript">var islrsharing = true; var islrsocialcounter = false;</script>
+            <script type='text/javascript' src='//share.loginradius.com/Content/js/LoginRadius.js' id='lrsharescript'></script>
+            <script type="text/javascript"> LoginRadius.util.ready(function () { $i = $SS.Interface.Simplefloat; $SS.Providers.Top = ["Facebook","GooglePlus","Vkontakte","Twitter","Email"]; $u = LoginRadius.user_settings;
+                $u.apikey= 'e8d6b517-6244-42e3-a578-dfc85988ca2f';
+                $i.size = 32; $i.left = '50px'; $i.top = '300px';$i.show("lrsharecontainer"); });
+            </script>
+ -->
 
 
-        <div class="container">
+
+
+
             <div class="content">
-			    <jdoc:include type="message" />
-			    <jdoc:include type="component" />
-                <div class="map">
-                    <?php if ($this->countModules('position-2')): ?>
-                    <jdoc:include type="modules" name="position-2" style="none" />
-                    <?php endif; ?>
-                </div>
-                <div class="form">
-                    <?php if ($this->countModules('position-3')): ?>
-                    <jdoc:include type="modules" name="position-3" style="none" />
+                    <jdoc:include type="message" />
+			        <jdoc:include type="component" />
+                    <div class="map">
+                        <?php if ($this->countModules('position-2')): ?>
+                        <jdoc:include type="modules" name="position-2" style="none" />
+                        <?php endif; ?>
+                    </div>
+                    <div class="form">
+                       <?php if ($this->countModules('position-3')): ?>
+                       <jdoc:include type="modules" name="position-3" style="none" />
+                       <?php endif; ?>
+                    </div>
+
+                <div class="comments">
+                    <?php if ($this->countModules('position-4')): ?>
+                    <jdoc:include type="modules" name="position-4" style="none" />
                     <?php endif; ?>
                 </div>
             </div>
 
             <div class="sidebar">
-                <div class="widjet calendar">
+                <div class="calendar">
                     <?php if ($this->countModules('position-7')): ?>
                     <jdoc:include type="modules" name="position-7" style="none" />
                     <?php endif; ?>
                 </div>
-                <div class="widjet partners">
-                    <?php if ($this->countModules('position-')): ?>
-                    <jdoc:include type="modules" name="position-" style="none" />
-                    <?php endif; ?>
-                </div>
-                <div class="widjet voting">
+                <div class="voting">
                     <?php if ($this->countModules('position-8')): ?>
                     <jdoc:include type="modules" name="position-8" style="none" />
                     <?php endif; ?>
                 </div>
+                <div class="partners">
+                    <?php if ($this->countModules('position-9')): ?>
+                    <jdoc:include type="modules" name="position-9" style="none" />
+                    <?php endif; ?>
+                </div>
+
             </div>
 
-		</div>
 
-		<div class="joomla-footer span-16 append-1">
-		    <hr />
-			&copy;<?php echo date('Y'); ?> <?php echo htmlspecialchars($app->getCfg('sitename')); ?>
+		<div class="footer">
+            <div>
+                <?php if ($this->countModules('position-10')): ?>
+                <jdoc:include type="modules" name="position-10" style="none" />
+                <?php endif; ?>
+            </div>
+			<p>&copy;<?php echo date('Y'); ?> <?php echo htmlspecialchars($app->getCfg('sitename')); ?></p>
 		</div>
 
 		<jdoc:include type="modules" name="debug" />
-	</body>
+	<div/>
+    </body>
 </html>

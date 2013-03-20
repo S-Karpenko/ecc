@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.5.0">
+	<name>JL Cackle last comments</name>
+	<creationDate>2011-12-26</creationDate>
+	<author>JoomLine</author>
+	<authorEmail>vadim@joomline.ru</authorEmail>
+	<authorUrl>http://www.joomline.ru</authorUrl>
+	<copyright>Copyright 2011 JoomLine.ru All rights reserved!</copyright>
+	<license>license GNU/GPL: http://www.gnu.org/copyleft/gpl.html </license>
+	<version>1.0</version>
+	<description>Отображает последние комментарии из системы комментирования cackle</description>
+	<files>
+		<filename module="mod_jlcackle">mod_jlcackle.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<config>
+		<fields name="params">
+          <fieldset name="basic">			<field name="id_site" type="text" label="ID Сайта" description="Идентификатор сайта в системе Cakcle" default="Введите id сайта"/>			<field name="coments" type="text" label="Колличество комментариев" description="Параметр отвечающий за вывод колличества комментариев" default="5"/>			<field name="avatarsize" type="text" label="Размер аватара" description="Задает размеры аватара указывается в px" default="6"/>
+			<field name="textsize" type="text" label="Колличетсво символов" description="Параметр отвечающий за вывод количество символов в комментарии если 0 то не выводить вообще" default="50"/>
+			<field	name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+		</fieldset>
+     </fields>
+
+	</config>
+</extension>

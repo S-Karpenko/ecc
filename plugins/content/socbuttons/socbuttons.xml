@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension 
+	version="1.7.0" 
+	type="plugin" 
+	group="content" 
+	method="upgrade">
+	<name>Content - SocButtons</name>
+	<author>tallib</author>
+	<creationDate>February 2012</creationDate>
+	<copyright>Copyright (C) 2012 Rcreated.com. All rights reserved.</copyright>
+	<authorEmail>sale@Rcreated.com</authorEmail>
+	<authorUrl>http://Rcreated.com/</authorUrl>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>1.5.0</version>
+	<description>PLG_CONTENT_SOCBUTTONS_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="socbuttons">socbuttons.php</filename>
+		<filename>index.html</filename>
+		<folder>language</folder>
+	</files>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+
+				<field name="spacer3" type="spacer" class="text" label="--------FACEBOOK LIKE--------"/>
+
+				<field name="fblike" 
+					type="radio"
+					default="1" 
+					label="PLG_SOCBUTTONS_SHOW_LIKE_BUTTON" 
+					description="PLG_SOCBUTTONS_SHOW_LIKE_BUTTON_DESC">
+					<option value="1">PLG_SOCBUTTONS_YES</option>
+					<option value="0">PLG_SOCBUTTONS_NO</option>
+				</field>
+				
+				<field name="fblike_type" 
+					type="list" 
+					default="button_count" 
+					label="PLG_SOCBUTTONS_TYPE_LIKE" 
+					description="PLG_SOCBUTTONS_TYPE_LIKE_DESC">
+					<option value="button_count">PLG_SOCBUTTONS_TYPE_HORIZONTAL</option>
+					<option value="box_count">PLG_SOCBUTTONS_TYPE_VERTICAL</option>
+				</field>
+				
+				<field name="fblike_width" type="text" 
+					default="75" 
+					label="PLG_SOCBUTTONS_FB_WIDTH" 
+					description="PLG_SOCBUTTONS_FB_WIDTH_DESC" />
+					
+					<field name="fblike_action" 
+					type="list" 
+					default="like" 
+					label="PLG_SOCBUTTONS_FB_ACTION" 
+					description="PLG_SOCBUTTONS_FB_ACTION_DESC">
+					<option value="like">PLG_SOCBUTTONS_FB_LIKE</option>
+					<option value="recommend">PLG_SOCBUTTONS_FB_RECOMMEND</option>
+				</field>
+				
+				<field name="fblike_color" 
+					type="list" 
+					default="light" 
+					label="PLG_SOCBUTTONS_FB_COLOR" 
+					description="PLG_SOCBUTTONS_FB_COLOR_DESC">
+					<option value="light">PLG_SOCBUTTONS_FB_LIGHT</option>
+					<option value="dark">PLG_SOCBUTTONS_FB_DARK</option>
+				</field>
+				
+				<field name="fblike_font" 
+					type="list" 
+					default="" 
+					label="PLG_SOCBUTTONS_FB_FONT" 
+					description="PLG_SOCBUTTONS_FB_FONT_DESC">
+					<option value=""></option>
+                    <option value="arial">arial</option>
+                    <option value="lucida+grande">lucida grande</option>
+                    <option value="segoe+ui">segoe ui</option>
+                    <option value="tahoma">tahoma</option>
+                    <option value="trebuchet+ms">trebuchet ms</option>
+                    <option value="verdana">verdana</option>
+				</field>
+				
+				<field name="fblike_lang" 
+					type="list" 
+					default="en_US" 
+					label="PLG_SOCBUTTONS_FB_LANG" 
+					description="PLG_SOCBUTTONS_FB_LANG_DESC">
+					<option value="af_ZA">Afrikaans</option>
+			<option value="ar_AR">Arabic</option>
+			<option value="ay_BO">Aymara</option>
+			<option value="az_AZ">Azeri</option>
+			<option value="be_BY">Belarusian</option>
+			<option value="bg_BG">Bulgarian</option>
+			<option value="bn_IN">Bengali</option>
+			<option value="bs_BA">Bosnian</option>
+			<option value="ca_ES">Catalan</option>
+			<option value="ck_US">Cherokee</option>
+			<option value="cs_CZ">Czech</option>
+			<option value="cy_GB">Welsh</option>
+			<option value="da_DK">Danish</option>
+			<option value="de_DE">German</option>
+			<option value="el_GR">Greek</option>
+			<option value="en_GB">English (UK)</option>
+			<option value="en_PI">English (Pirate)</option>
+			<option value="en_UD">English (Upside Down)</option>
+			<option value="en_US">English [US]</option>
+			<option value="eo_EO">Esperanto</option>
+			<option value="es_CL">Spanish (Chile)</option>
+			<option value="es_CO">Spanish (Colombia)</option>
+			<option value="es_ES">Spanish (Spain)</option>
+			<option value="es_LA">Spanish</option>
+			<option value="es_MX">Spanish (Mexico)</option>
+			<option value="es_VE">Spanish (Mexico)</option>
+			<option value="et_EE">Estonian</option>
+			<option value="eu_ES">Basque</option>
+			<option value="fa_IR">Persian</option>
+			<option value="fb_LT">Leet Speak</option>
+			<option value="fi_FI">Finnish</option>
+			<option value="fo_FO">Faroese</option>
+			<option value="fr_CA">French (Canada)</option>
+			<option value="fr_FR">French (France)</option>
+			<option value="ga_IE">Irish</option>
+			<option value="gl_ES">Galician</option>
+			<option value="gn_PY">Guarani</option>
+			<option value="gu_IN">Gujarati</option>
+			<option value="he_IL">Hebrew</option>
+			<option value="hi_IN">Hindi</option>
+			<option value="hr_HR">Croatian</option>
+			<option value="hu_HU">Hungarian</option>
+			<option value="hy_AM">Armenian</option>
+			<option value="id_ID">Indonesian</option>
+			<option value="is_IS">Icelandic</option>
+			<option value="it_IT">Italian</option>
+			<option value="ja_JP">Japanese</option>
+			<option value="jv_ID">Javanese</option>
+			<option value="ka_GE">Georgian</option>
+			<option value="kk_KZ">Kazakh</option>
+			<option value="km_KH">Khmer</option>
+			<option value="kn_IN">Kannada</option>
+			<option value="ko_KR">Korean</option>
+			<option value="ku_TR">Kurdish</option>
+			<option value="la_VA">Latin</option>
+			<option value="li_NL">Limburgish</option>
+			<option value="lt_LT">Lithuanian</option>
+			<option value="lv_LV">Latvian</option>
+			<option value="mg_MG">Malagasy</option>
+			<option value="mk_MK">Macedonian</option>
+			<option value="ml_IN">Malayalam</option>
+			<option value="mn_MN">Mongolian</option>
+			<option value="mr_IN">Marathi</option>
+			<option value="ms_MY">Malay</option>
+			<option value="mt_MT">Maltese</option>
+			<option value="nb_NO">Norwegian (bokmal)</option>
+			<option value="ne_NP">Nepali</option>
+			<option value="nl_BE">Dutch (Belgie)</option>
+			<option value="nl_NL">Dutch</option>
+			<option value="nn_NO">Norwegian (nynorsk)</option>
+			<option value="pa_IN">Punjabi</option>
+			<option value="pl_PL">Polish</option>
+			<option value="ps_AF">Pashto</option>
+			<option value="pt_BR">Portuguese (Brazil)</option>
+			<option value="pt_PT">Portuguese (Portugal)</option>
+			<option value="qu_PE">Quechua</option>
+			<option value="rm_CH">Romansh</option>
+			<option value="ro_RO">Romanian</option>
+			<option value="ru_RU">Russian</option>
+			<option value="sa_IN">Sanskrit</option>
+			<option value="se_NO">Northern Sami</option>
+			<option value="sk_SK">Slovak</option>
+			<option value="sl_SI">Slovenian</option>
+			<option value="so_SO">Somali</option>
+			<option value="sq_AL">Albanian</option>
+			<option value="sr_RS">Serbian</option>
+			<option value="sv_SE">Swedish</option>
+			<option value="sw_KE">Swahili</option>
+			<option value="sy_SY">Syriac</option>
+			<option value="ta_IN">Tamil</option>
+			<option value="te_IN">Telugu</option>
+			<option value="tg_TJ">Tajik</option>
+			<option value="th_TH">Thai</option>
+			<option value="tl_PH">Filipino</option>
+			<option value="tl_ST">Klingon</option>
+			<option value="tr_TR">Turkish</option>
+			<option value="tt_RU">Tatar</option>
+			<option value="uk_UA">Ukrainian</option>
+			<option value="ur_PK">Urdu</option>
+			<option value="uz_UZ">Uzbek</option>
+			<option value="vi_VN">Vietnamese</option>
+			<option value="xh_ZA">Xhosa</option>
+			<option value="yi_DE">Yiddish</option>
+			<option value="zh_CN">Simplified Chinese (China)</option>
+			<option value="zh_HK">Traditional Chinese (Hong Kong)</option>
+			<option value="zh_TW">Traditional Chinese (Taiwan)</option>
+			<option value="zu_ZA">Zulu</option>
+				</field>
+
+				<field name="spacer4" type="spacer" hr="true" />	
+<field name="spacer5" type="spacer" class="text" label="--------TWITTER--------"/>	
+
+				<field name="twitter" 
+					type="radio" 
+					default="1" 
+					label="PLG_SOCBUTTONS_SHOW_TWITTER_BUTTON" 
+					description="PLG_SOCBUTTONS_SHOW_TWITTER_BUTTON_DESC">
+					<option value="1">PLG_SOCBUTTONS_YES</option>
+					<option value="0">PLG_SOCBUTTONS_NO</option>
+				</field>
+
+				<field name="twitter_type" 
+					type="list" 
+					default="horizontal" 
+					label="PLG_SOCBUTTONS_TYPE_TWITTER" 
+					description="PLG_SOCBUTTONS_TYPE_TWITTER_DESC">
+					<option value="horizontal">PLG_SOCBUTTONS_TYPE_HORIZONTAL</option>
+					<option value="vertical">PLG_SOCBUTTONS_TYPE_VERTICAL</option>
+					<option value="none">PLG_SOCBUTTONS_TYPE_NONE</option>
+				</field>
+				
+				<field name="twitter_lang" 
+					type="list" 
+					default="en" 
+					label="PLG_SOCBUTTONS_LANG_TWITTER" 
+					description="PLG_SOCBUTTONS_LANG_TWITTER_DESC">
+					<option value="en">PLG_SOCBUTTONS_LANG_EN</option>
+					<option value="ru">PLG_SOCBUTTONS_LANG_RU</option>
+					<option value="es">PLG_SOCBUTTONS_LANG_ES</option>
+					<option value="it">PLG_SOCBUTTONS_TYPE_IT</option>
+					<option value="ko">PLG_SOCBUTTONS_TYPE_KO</option>
+					<option value="de">PLG_SOCBUTTONS_TYPE_DE</option>
+					<option value="pt">PLG_SOCBUTTONS_TYPE_PT</option>
+					<option value="tr">PLG_SOCBUTTONS_TYPE_TR</option>
+					<option value="fr">PLG_SOCBUTTONS_TYPE_FR</option>
+					<option value="ja">PLG_SOCBUTTONS_TYPE_JA</option>
+				</field>
+
+				<field name="spacer6" type="spacer" hr="true" />
+<field name="spacer7" type="spacer" class="text" label="--------GOOGLE +1--------"/>
+
+				<field name="Google" 
+					type="radio" 
+					default="1" 
+					label="PLG_SOCBUTTONS_SHOW_GOOGLE_BUTTON" 
+					description="PLG_SOCBUTTONS_SHOW_GOOGLE_BUTTON_DESC">
+					<option value="1">PLG_SOCBUTTONS_YES</option>
+					<option value="0">PLG_SOCBUTTONS_NO</option>
+				</field>
+				
+				<field name="Google_type" 
+					type="list" 
+					default="medium" 
+					label="PLG_SOCBUTTONS_TYPE_GOOGLE" 
+					description="PLG_SOCBUTTONS_TYPE_GOOGLE_DESC">
+					<option value="medium">PLG_SOCBUTTONS_G1_MEDIUM</option>
+					<option value="tall">PLG_SOCBUTTONS_G1_TALL</option>
+					<option value="small">PLG_SOCBUTTONS_SMALL</option>
+					<option value="standard">PLG_SOCBUTTONS_G1_STANDART</option>
+				</field>	
+				<field name="plusLang" type="list" default="en" label="PLG_SOCBUTTONS_GOOGLE_LANG" description="PLG_SOCBUTTONS_GOOGLE_LANG_DESC" >
+            <option value="ar">Arabic</option>
+            <option value="bg">Bulgarian</option>
+            <option value="ca">Catalan</option>
+            <option value="zh">Chinese</option>
+            <option value="zh_CN">Chinese (China)</option>
+            <option value="zh_HK">Chinese (Hong Kong)</option>
+            <option value="zh_TW">Chinese (Taiwan)</option>
+            <option value="hr">Croatian</option>
+            <option value="cs">Czech</option>
+            <option value="da">Danish</option>
+            <option value="nl">Dutch</option>
+            <option value="en">English</option>
+            <option value="en_IN">English (India)</option>
+            <option value="en_IE">English (Ireland)</option>
+            <option value="en_SG">English (Singapore)</option>
+            <option value="en_ZA">English (South Africa)</option>
+            <option value="en_GB">English (United Kingdom)</option>
+            <option value="fil">Filipino</option>
+            <option value="fi">Finnish</option>
+            <option value="fr">French</option>
+            <option value="de">German</option>
+            <option value="de_CH">German (Switzerland)</option>
+            <option value="el">Greek</option>
+            <option value="iw">Hebrew</option>
+            <option value="hu">Hungarian</option>
+            <option value="in">Indonesian</option>
+            <option value="it">Italian</option>
+            <option value="ja">Japanese</option>
+            <option value="kn">Kannada</option>
+            <option value="ko">Korean</option>
+            <option value="lv">Latvian</option>
+            <option value="lt">Lithuanian</option>
+            <option value="no">Norwegian</option>
+            <option value="fa">Persian</option>
+            <option value="pl">Polish</option>
+            <option value="pt_BR">Portuguese (Brazil)</option>
+            <option value="pt_PT">Portuguese (Portugal)</option>
+            <option value="ro">Romanian</option>
+            <option value="ru">Russian</option>
+            <option value="sr">Serbian</option>
+            <option value="sk">Slovak</option>
+            <option value="sl">Slovenian</option>
+            <option value="es">Spanish</option>
+            <option value="sv">Swedish</option>
+            <option value="gsw">Swiss German</option>
+            <option value="th">Thai</option>
+            <option value="tr">Turkish</option>
+            <option value="uk">Ukrainian</option>
+            <option value="vi">Vietnamese</option>
+        </field>
+				<field name="spacer8" type="spacer" hr="true" />
+				<field name="spacer9" type="spacer" class="text" label="--------LINKEDIN--------"/>
+				
+				<field name="linkedin" 
+					type="radio" 
+					default="1" 
+					label="PLG_SOCBUTTONS_SHOW_LINKEDIN_BUTTON" 
+					description="PLG_SOCBUTTONS_SHOW_LINKEDIN_BUTTON_DESC">
+					<option value="1">PLG_SOCBUTTONS_YES</option>
+					<option value="0">PLG_SOCBUTTONS_NO</option>
+				</field>
+				
+				<field name="linkedin_type" 
+					type="list" 
+					default="right" 
+					label="PLG_SOCBUTTONS_TYPE_LINKEDIN" 
+					description="PLG_SOCBUTTONS_TYPE_LINKEDIN_DESC">
+					<option value="right">PLG_SOCBUTTONS_TYPE_HORIZONTAL</option>
+					<option value="top">PLG_SOCBUTTONS_TYPE_VERTICAL</option>
+				</field>	
+				
+<field name="spacer10" type="spacer" hr="true" />
+<field name="spacer11" type="spacer" class="text" label="--------VKONTAKTE--------"/>
+
+				<field name="Vk" 
+					type="radio" 
+					default="1" 
+					label="PLG_SOCBUTTONS_SHOW_VK_BUTTON" 
+					description="PLG_SOCBUTTONS_SHOW_VK_BUTTON_DESC">
+					<option value="1">PLG_SOCBUTTONS_YES</option>
+					<option value="0">PLG_SOCBUTTONS_NO</option>
+				</field>
+				
+				<field name="vk_id" type="text" 
+					default="" 
+					label="PLG_SOCBUTTONS_VK_ID" 
+					description="PLG_SOCBUTTONS_VK_ID_DESC" />
+				
+				<field name="Vk_type" 
+					type="list" 
+					default="button" 
+					label="PLG_SOCBUTTONS_TYPE_VK" 
+					description="PLG_SOCBUTTONS_TYPE_VK_DESC">
+					<option value="button">PLG_SOCBUTTONS_TYPE_HORIZONTAL</option>
+					<option value="vertical">PLG_SOCBUTTONS_TYPE_VERTICAL</option>
+					<option value="mini">PLG_SOCBUTTONS_VK_MINI</option>
+				</field>	
+				<field name="spacer12" type="spacer" hr="true" />	
+				<field name="spacer13" type="spacer" class="text" label="--------YA.RU--------"/>	
+<field name="Yaru" 
+					type="radio" 
+					default="1" 
+					label="PLG_SOCBUTTONS_SHOW_YARU_BUTTON" 
+					description="PLG_SOCBUTTONS_SHOW_YARU_BUTTON_DESC">
+					<option value="1">PLG_SOCBUTTONS_YES</option>
+					<option value="0">PLG_SOCBUTTONS_NO</option>
+				</field>
+				
+				<field name="Yaru_type" 
+					type="list" 
+					default="button" 
+					label="PLG_SOCBUTTONS_TYPE_YARU" 
+					description="PLG_SOCBUTTONS_TYPE_YARU_DESC">
+					<option value="button">PLG_SOCBUTTONS_TYPE_YARU_BUTTON</option>
+					<option value="icon">PLG_SOCBUTTONS_TYPE_YARU_ICON</option>
+				</field>	
+				
+				<field name="spacer14" type="spacer" hr="true" />
+<field name="spacer15" type="spacer" class="text" label="--------CLASSMATES---MY WORLD--------"/>				
+
+                <field name="Odnomm" 
+					type="radio" 
+					default="1" 
+					label="PLG_SOCBUTTONS_SHOW_ODNOMM_BUTTON" 
+					description="PLG_SOCBUTTONS_SHOW_ODNOMM_BUTTON_DESC">
+					<option value="1">PLG_SOCBUTTONS_YES</option>
+					<option value="0">PLG_SOCBUTTONS_NO</option>
+				</field>	
+				
+				<field name="Odnomm_type" 
+					type="radio" 
+					default="button" 
+					label="PLG_SOCBUTTONS_TYPE_ODNO" 
+					description="PLG_SOCBUTTONS_TYPE_ODNO_DESC">
+					<option value="button">PLG_SOCBUTTONS_TYPE_ODNOMM_BUTTON</option>
+					<option value="small">PLG_SOCBUTTONS_TYPE_ODNOMM_SMALL</option>
+				</field>
+				
+				<field name="Odnomm_cotr" 
+					type="radio" 
+					default="0" 
+					label="PLG_SOCBUTTONS_TYPE_ODNOMM" 
+					description="PLG_SOCBUTTONS_TYPE_ODNOMM_DESC">
+					<option value="0">PLG_SOCBUTTONS_TYPE_ODNO_STAT</option>
+					<option value="1">PLG_SOCBUTTONS_TYPE_ODNO_NO</option>
+				</field>
+				
+				<field name="mm_txt" 
+					type="list" 
+					default="1" 
+					label="PLG_SOCBUTTONS_MM_TXT" 
+					description="PLG_SOCBUTTONS_MM_TXT_DESC">
+					<option value="1">PLG_SOCBUTTONS_MM_TXT1</option>
+					<option value="2">PLG_SOCBUTTONS_MM_TXT2</option>
+					<option value="3">PLG_SOCBUTTONS_MM_TXT3</option>
+				</field>
+				
+				<field name="odn_txt" 
+					type="list" 
+					default="1" 
+					label="PLG_SOCBUTTONS_ODN_TXT" 
+					description="PLG_SOCBUTTONS_ODN_TXT_DESC">
+					<option value="1">PLG_SOCBUTTONS_ODN_TXT1</option>
+					<option value="2">PLG_SOCBUTTONS_ODN_TXT2</option>
+					<option value="3">PLG_SOCBUTTONS_ODN_TXT3</option>
+				</field>	
+				
+<field name="spacer16" type="spacer" hr="true" />
+<field name="spacer17" type="spacer" class="text" label="--------DISPLAY OPTIONS--------"/>		
+
+                <field name="socfront" 
+					type="radio" 
+					default="0" 
+					label="PLG_SOCBUTTONS_SHOW_FRONT" 
+					description="PLG_SOCBUTTONS_SHOW_FRONT_DESC">
+					<option value="1">PLG_SOCBUTTONS_YES</option>
+					<option value="0">PLG_SOCBUTTONS_NO</option>
+				</field>			
+
+				<field name="fb_position" 
+					type="list" 
+					default="above" 
+					label="PLG_SOCBUTTONS_POSITION" 
+					description="PLG_SOCBUTTONS_POSITION_DESC">
+					<option value="above">PLG_SOCBUTTONS_ABOVE</option>
+					<option value="below">PLG_SOCBUTTONS_BELOW</option>
+				</field>
+
+				<field name="fb_align" 
+					type="list" 
+					default="left" 
+					label="PLG_SOCBUTTONS_ALIGN" 
+					description="PLG_SOCBUTTONS_ALIGN_DESC">
+					<option value="right">PLG_SOCBUTTONS_RIGHT</option>
+					<option value="left">PLG_SOCBUTTONS_LEFT</option>
+				</field>
+				
+				<field
+					name="fb_categories"
+					type="category"
+					extension="com_content"
+					multiple="true"
+					size="10"
+					default=""
+					label="PLG_SOCBUTTONS_EXCLUDE_CATEGORIES" 
+					description="PLG_SOCBUTTONS_EXCLUDE_CATEGORIES_DESC" >
+					</field>
+
+				<field name="fb_articles" 
+				type="text" 
+				default="" 
+				label="PLG_SOCBUTTONS_EXCLUDE_ARTICLE_ID" 
+				description="PLG_SOCBUTTONS_EXCLUDE_ARTICLE_ID_DESC" />
+				
+            </fieldset>
+			<fieldset name="advanced">
+	<field name="soc_copr" 
+					type="radio"
+					default="soc_no" 
+					label="PLG_SOCBUTTONS_SHOW_CPR" 
+					description="PLG_SOCBUTTONS_SHOW_CPR_DESC">
+					<option value="soc_yes">PLG_SOCBUTTONS_CPR_YES</option>
+					<option value="soc_no">PLG_SOCBUTTONS_CPR_NO</option>
+					</field>
+				</fieldset>
+		</fields>
+	</config>
+</extension>

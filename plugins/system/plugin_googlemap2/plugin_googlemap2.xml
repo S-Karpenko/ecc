@@ -14,13 +14,12 @@
 		<filename>plugin_googlemap2_helper.php</filename>
 		<filename>plugin_googlemap2_proxy.php</filename>
 		<filename>plugin_googlemap2_twitter_kml.php</filename>
-		<filename>plugin_googlemap2.perm</filename>
 		<filename>gpl.txt</filename>
 		<filename>index.html</filename>
 	</files>
 	<media folder="media" destination="plugin_googlemap2">
 		<folder>site</folder>
-		<filename>index.html</filename>		
+		<filename>index.html</filename>	
     </media>
 	<languages>
 	   <language tag="en-GB">language/en-GB.plg_system_plugin_googlemap2.ini</language>
@@ -634,8 +633,8 @@
 				<field name="langanim" type="textarea" filter="raw" rows="3" cols="40" default="en;The requested panorama could not be displayed|Could not generate a route for the current start and end addresses|Street View coverage is not available for this route|You have reached your destination|miles|miles|ft|kilometers|kilometer|meters|In|You will reach your destination|Stop|Drive|Press Drive to follow your route|Route|Speed|Fast|Medium|Slow" export='0' label="GOOGLEMAPS_MAPS_LANGANIM" description="GOOGLEMAPS_TT_MAPS_LANGANIM" />
 				<field name="txtdir" type="textarea" filter="raw" rows="3" cols="40" default="Directions: " export='1' label="GOOGLEMAPS_MAPS_TITLEDIR" description="GOOGLEMAPS_TT_MAPS_TITLEDIR" />
 				<field name="txtgetdir" type="textarea" filter="raw" rows="3" cols="40" default="Get Directions" export='1' label="GOOGLEMAPS_MAPS_BUTTONDIR" description="GOOGLEMAPS_TT_MAPS_BUTTONDIR" />
-				<field name="txtfrom" type="textarea" filter="raw" rows="3" cols="40" default="From here" export='1' label="GOOGLEMAPS_MAPS_TXTFROMDIR" description="GOOGLEMAPS_TT_MAPS_TXTFROMDIR" />
-				<field name="txtto" type="textarea" filter="raw" rows="3" cols="40" default="To here" export='1' label="GOOGLEMAPS_MAPS_TXTTODIR" description="GOOGLEMAPS_TT_MAPS_TXTTODIR" />
+				<field name="txtfrom" type="textarea" filter="raw" rows="3" cols="40" default="" export='1' label="GOOGLEMAPS_MAPS_TXTFROMDIR" description="GOOGLEMAPS_TT_MAPS_TXTFROMDIR" />
+				<field name="txtto" type="textarea" filter="raw" rows="3" cols="40" default="" export='1' label="GOOGLEMAPS_MAPS_TXTTODIR" description="GOOGLEMAPS_TT_MAPS_TXTTODIR" />
 				<field name="txtdiraddr" type="textarea" filter="raw" rows="3" cols="40" default="Address: " export='1' label="GOOGLEMAPS_MAPS_TXTLABELADDR" description="GOOGLEMAPS_TT_MAPS_TXTLABELADDR" />
 				<field name="txt_driving" type="textarea" filter="raw" rows="3" cols="40" default="" value="Driving" export='1' label="GOOGLEMAPS_MAPS_TXTLABELDRIVING" description="GOOGLEMAPS_TT_MAPS_TXTLABELDRIVING" />
 				<field name="txt_avhighways" type="textarea" filter="raw" rows="3" cols="40" default="" value="Avoid highways" export='1' label="GOOGLEMAPS_MAPS_TXTAVOIDHIGHWAYS" description="GOOGLEMAPS_TT_MAPS_TXTAVOIDHIGHWAYS" />

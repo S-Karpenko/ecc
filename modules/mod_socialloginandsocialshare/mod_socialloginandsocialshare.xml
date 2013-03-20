@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+	<name>Social Login And Social Share</name>
+    <creationDate>2012-01-01</creationDate>
+    <author>LoginRadius</author>
+    <authorEmail>developers@loginradius.com</authorEmail>
+    <authorUrl>www.LoginRadius.com</authorUrl>
+    <copyright>Copyright (C) 2012 - till Open Source Matters. All rights reserved.</copyright>
+    <license>GPL 2.0</license>
+    <version>2.0</version>
+    <description>LoginRadius enables social login and social share for your joomla websites.</description>
+<files>
+	<filename module="mod_socialloginandsocialshare">mod_socialloginandsocialshare.php</filename>
+	<filename module="mod_socialloginandsocialshare">helper.php</filename>
+	<filename module="mod_socialloginandsocialshare">lrstyle.css</filename>
+	<filename module="mod_socialloginandsocialshare">index.html</filename>
+	<filename module="mod_socialloginandsocialshare">tmpl/default.php</filename>
+	<filename module="mod_socialloginandsocialshare">tmpl/index.html</filename>
+</files>
+	
+<config>
+ <fields name="params">
+            
+			<fieldset name="basic">
+			<field
+					name="pretext"
+					type="textarea"
+					filter="safehtml"
+					cols="30"
+					rows="2"
+					label="MOD_LOGINRADIUS_FIELD_PRE_TEXT_LABEL"
+					description="MOD_LOGINRADIUS_FIELD_PRE_TEXT_DESC" />
+				<field
+					name="posttext"
+					type="textarea"
+					filter="safehtml"
+					cols="30"
+					rows="2"
+					label="MOD_LOGINRADIUS_FIELD_POST_TEXT_LABEL"
+					description="MOD_LOGINRADIUS_FIELD_POST_TEXT_DESC" />
+				<field 
+					name="login" 
+					type="menuitem" 
+					disable="separator" 
+					label="MOD_LOGINRADIUS_FIELD_LOGIN_REDIRECTURL_LABEL" 
+					description="MOD_LOGINRADIUS_FIELD_LOGIN_REDIRECTURL_DESC" >
+				<option value="">JDEFAULT</option>
+				</field>
+				<field
+					name="logout"
+					type="menuitem"
+					disable="separator"
+					label="MOD_LOGINRADIUS_FIELD_LOGOUT_REDIRECTURL_LABEL"
+					description="MOD_LOGINRADIUS_FIELD_LOGOUT_REDIRECTURL_DESC" >
+					<option 
+						value="">JDEFAULT</option>
+				</field>
+				<field
+					name="usesecure"
+					type="radio"
+					default="0"
+					label="MOD_LOGINRADIUS_FIELD_USESECURE_LABEL"
+					description="MOD_LOGINRADIUS_FIELD_USESECURE_DESC">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+				
+          </fieldset>
+		  <fieldset
+				name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				
+			</fieldset>
+
+      </fields>
+    </config>
+</extension>

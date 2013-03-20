@@ -2,20 +2,22 @@
 /*------------------------------RESET DEFAULT STYLES--------------------------------*/
 /*----------------------------------------------------------------------------------*/
 html,body                       { width:100%; height:100%; }
-body                            { padding:0; margin:0; font:12px Tahoma, sans-serif; background:url(../images/straws.png); color:#000; }
+
+body                            { padding:0; margin:0; font:14px Tahoma, sans-serif; background:url(../images/background_wood.jpg); color:#737373; }
 div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,checkbox,input,textarea {
     padding:0;
     margin:0;
     outline:none;
     list-style:none;
-}
+    color:#7A7B7B;
+} 
 select, input, textarea        { font-size:12px; vertical-align:middle; }
-textarea                       { vertical-align:top; }
+textarea                       { vertical-align:top; max-height:150px; max-height:500px; }
 :focus                         { outline:none; }
 input[type=submit]             { cursor:pointer; }
 img, fieldset                  { border:0; }
 table                          { border-collapse:collapse; border-spacing:0; }
-a:link, a:visited              { font:12px Tahoma, sans-serif; color:#000; text-decoration:none; }
+a:link, a:visited              { font:14px Tahoma, sans-serif; color:#737373; text-decoration:none; }
 a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------DEFAULT CLASSES------------------------------*/
@@ -38,44 +40,303 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------WRAPPER--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-.wrapper { width:980px; margin:0 auto;}
+.wrapper {
+    width:980px;
+    margin:0 auto;
+	position:relative;
+	z-index:100;
+	
+}
+.bg_blue { background:url(../images/background_blue.jpg); height:608px; width:100%; position:absolute; top:277px; bottom:284px;}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-.header { height:170px; padding-top:10px;}
+.header { height:97px; padding:25px 20px 30px 20px;}
 .header a img { text-indent:-1000em; }
-.header ul { float:right;}
-.header ul li { float:left;}
-.header ul li a { display:block; width:20px; height:20px; padding:5px; background-color:#033; text-indent:-1000em; margin: 50px 0 0 20px;}
-/*----------------------------------------------------------------------------------*/
+.header img { width:136px; height:96px;}
 /*-------------------------------------NAV------------------------------------------*/
-/*----------------------------------------------------------------------------------*/
-.navbar {position:relative; margin-bottom:10px;}
-.navbar ul { height:38px; background-color:#7BAD38;}
-.navbar ul li a {padding:10px 20px; border:1px solid #000; display:block; margin-right:1px; background-color:#86BD3D; border-color:#7BAD38;}
-.navbar ul li a.about { margin-right:0; }
-.navbar ul li { float:left; position:relative;}
-.navbar ul li ul { display:none;}
-.navbar li ul { position:absolute;}
-.navbar li:hover ul { display: block; position:absolute; }
-.navbar ul.joomla-nav li a.ikc { padding:10px 33px;}
-/*----------------------------------------------------------------------------------*/
+
+.navbar {
+    position:relative;
+    margin-bottom:30px;
+    z-index:100;}
+.navbar ul {
+    height:35px;
+    background:url(../images/nav_backgroun.gif);
+	border:1px solid #01536D;
+    margin: 0 auto;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+.navbar ul li a {
+    background:url(../images/nav_backgroun.gif);
+    width: 98px;
+    padding:7px 10px;
+    display:block;
+    margin-right:1px;
+    color:#FFF;
+    text-align: center;
+	-webkit-border-radius: 90px;
+	-moz-border-radius: 90px;
+	border-radius: 90px;
+	text-transform:uppercase;
+}
+.navbar ul li a:hover {
+    background-color:#18AAE2;
+   /* border:1px solid #0A78B4;*/
+    border-top-color:#50D1F6;
+    border-left-color:#50D1F6;
+    padding:6px 10px;
+}
+.navbar ul li a.active {
+    background-color:#18AAE2;
+    border:1px solid #0A78B4;
+    border-top-color:#50D1F6;
+    border-left-color:#50D1F6;
+}
+.navbar ul li ul a {
+    display: block;
+    width: 109px;
+    padding: 8px 5px;
+}
+.navbar ul li {
+    float:left;
+    position:relative;
+}
+
+.navbar ul li ul {
+    display:none;
+    
+    }
+.navbar li ul {
+    position:absolute;
+}
+.navbar li:hover ul {
+    position:absolute; display:block;
+}
+
+
+
 /*-------------------------------------CONTENT--------------------------------------*/
-/*----------------------------------------------------------------------------------*/
-.conteiner {clear:both;  margin-bottom:10px;}
 
-.content { height:1000px; width:690px; background-color:#009933; float:left; margin:0 20px 0 0;  padding:10px 0 0 10px;}
-.content .post { width:680px; height:320px; background-color:#0F9; margin-bottom:10px;}
+.content {
+	background:#FFF;
+    width:730px;
+    float:left;
+    margin:0 20px 0 0;
+    -webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+	box-shadow: 1px 1px 1px #CCCCCC;
+	min-height:880px;
+}
+.content .item-page {
+    width:730px;
+    height:250px;
+    background-color:#F5FAF1;
+    margin-bottom:10px;
+}
+.content .post {
+    width:730px;
+    height:250px;
+    background-color:#0F9;
+    margin-bottom:10px;
+}
 
-/*- ---------------------------------------------------------------------------------*/
-/*-------------------------------------SIDEBAR--------------------------------------*/
-/*----------------------------------------------------------------------------------*/
-.sidebar { float:right;}
-.sidebar .widjet{ width:260px; height:250px;}
-.sidebar .calendar { background-color:#999; margin-bottom:10px;}
-.sidebar .partners { background-color:#333; margin-bottom:10px;}
-.sidebar .voting { background-color:#CCC;}
-/*----------------------------------------------------------------------------------*/
+.content h3 {background:url(../images/background_h3.png) repeat-y; :1em; font:24px "Trebuchet MS"; color:#FFF; font-weight:bold; padding:16px 25px;}
+/*- -------------------------------About-------------------------------------*/
+
+#content .contacts span.contacts {
+    font-family: "Trebuchet MS";
+    font-weight:normal;
+    font-size:40px;
+
+}
+
+#content .contacts div.map {
+    height:100px;
+    float:left;
+    padding:17px 17px 17px 16px;
+}
+
+#content .contacts p.contacts{
+    overflow:hidden;
+    padding:0 0 0 5px;
+    float:inherit;
+    font-size:16px;
+}
+
+
+
+/*-------------------------------------SIDEBAR--------------------------------------
+
+----------------------------------------------------------------------------------*/
+
+.sidebar {
+    float:right;
+    width:230px;
+    height:250px;
+}
+.sidebar .calendar {
+    background-color:#FFF;
+    margin-bottom:10px;
+	width:230px;
+	height:208px;
+	 -webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+	color:#737373;
+	
+	
+}
+
+.sidebar .voting {
+    background-color:#FFF;
+    margin-bottom:10px;
+	width:230px;
+	height:208px;
+	 -webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+	color:#737373;
+}
+
+
+/*****************************Partners**************************************************/
+
+.partners li{
+    float:left;
+    margin:0 35px;
+    width:90px;
+}
+
+.partners ul li a{
+    overflow:hidden;
+    height: 67px;
+}
+
+
+a.svai {
+    background: url(../../../images/svai_grayscale.png) no-repeat;
+    display: block;
+    weight:75px;
+}
+a.svai:hover {
+    background: url(../../../images/svai_color.png) no-repeat;
+
+}
+a.geekhub {
+    background: url(../../../images/geekhub_grayscale.png) no-repeat;
+    display: block;
+
+}
+a.geekhub:hover {
+    background: url(../../../images/geekhub_color.png) no-repeat;
+
+}
+a.edu {
+    background: url(../../../images/edu_helsinki_grayscale.png) no-repeat;
+    display: block;
+
+}
+a.edu:hover {
+    background: url(../../../images/edu_helsinki_color.png) no-repeat;
+}
+a.la-strada {
+    background: url(../../../images/la-strada_grayscale.png) no-repeat;
+    display: block;
+}
+a.la-strada:hover {
+    background: url(../../../images/la-strada_color.png) no-repeat;
+}
+
+a.prava {
+    background: url(../../../images/prava_cheloveka_grayscale.png) no-repeat;
+    display: block;
+
+}
+a.prava:hover {
+    background: url(../../../images/prava_cheloveka_color.png) no-repeat;
+}
+
+a.rodis {
+    background: url(../../../images/rodis_grayscale.png) no-repeat;
+    display: block;
+
+}
+a.rodis:hover {
+    background: url(../../../images/rodis_color.png) no-repeat;
+}
+
+a.oipopp {
+    background: url(../../../images/oipopp_grayscale.png) no-repeat;
+    display: block;
+
+}
+a.oipopp:hover {
+    background: url(../../../images/oipopp_color.png) no-repeat;
+}
+
 /*-------------------------------------FOOTER---------------------------------------*/
-/*----------------------------------------------------------------------------------*/
-.footer { clear:both; height:70px; background-color:#033;}
+
+
+
+.footer {
+    clear:both;
+    height:70px;
+
+}
+
+
+
+/*right social buttons-****************************************************************************************/
+.buttons{
+    width: 30px;
+    height: 273px;
+    position: fixed;
+    top: 260px;
+    right: 0;
+    z-index: 10;
+    overflow: visible;
+}
+.buttons .fly-button{
+    width: 123px;
+    height: 29px;
+    display: block;
+    position: absolute;
+    transition: margin .8s;
+    -moz-transition: margin .8s;
+    -webkit-transition: margin .8s;
+    -o-transition: margin .8s;
+}
+.buttons .fly-button:hover{
+    margin-left: -93px;
+}
+
+
+.buttons .fly-button#twitter-button{
+    top: 36px;
+    background:url(../images/twitter-button.png);
+}
+.buttons .fly-button#vkontakte-button{
+    top: 72px;
+    background:url(../images/vkontakte-button.png);
+}
+.buttons .fly-button#youtube-button{
+    top: 144px;
+    background:url(../images/youtube.png);
+}
+.buttons .fly-button#odnoklassniki-button{
+    top: 108px;
+    background:url(../images/odnoklassniki-button.png);
+}
+
+.buttons .fly-button#facebook-button {
+    top: 0;
+    background:url(../images/facebook-button.png);
+}
+
+
+
+/**********************************************************************************************************************/

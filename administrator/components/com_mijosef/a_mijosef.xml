@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.6.0" method="upgrade">
+	<!-- Start -->
+	<name>COM_MIJOSEF</name>
+	<author>Mijosoft LLC</author>
+	<creationDate>December 2012</creationDate>
+	<copyright>2009-2012 Mijosoft LLC</copyright>
+	<license>GNU/GPL, http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>info@mijosoft.com</authorEmail>
+	<authorUrl>www.mijosoft.com</authorUrl>
+	<version>1.2.0</version>
+	<description>MijoSEF is a flexible and powerful SEF URLs, Metadata, Sitemap and Tags generator with an easy-to-use graphical user interface that simplifies the management of your site SEO rank.</description>
+	
+	<!-- Frontend -->
+	<files folder="site">
+		<!-- Files -->
+		<filename>mijosef.php</filename>
+		<filename>index.html</filename>
+		<!-- Folders -->
+		<folder>assets</folder>
+		<folder>controllers</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+	</files>
+	
+	<languages folder="languages/site">
+		<language tag="en-GB">en-GB/en-GB.com_mijosef.ini</language>
+	</languages>
+	
+	<!-- Backend -->
+	<administration>
+		<menu img="components/com_mijosef/assets/images/mijosef.png">COM_MIJOSEF</menu>
+		<submenu>
+	    	<menu link="option=com_mijosef" img="components/com_mijosef/assets/images/mijosef.png">COM_COM_MIJOSEF_CPANEL</menu>
+	    	<menu link="option=com_mijosef&amp;controller=config&amp;task=edit" img="components/com_mijosef/assets/images/icon-16-config.png">COM_COM_MIJOSEF_CONFIG</menu>
+	      	<menu link="option=com_mijosef&amp;controller=extensions&amp;task=view" img="components/com_mijosef/assets/images/icon-16-extensions.png">COM_COM_MIJOSEF_EXTENSIONS</menu>
+	      	<menu link="option=com_mijosef&amp;controller=sefurls&amp;task=view" img="components/com_mijosef/assets/images/icon-16-urls.png">COM_COM_MIJOSEF_URLS</menu>
+	      	<menu link="option=com_mijosef&amp;controller=metadata&amp;task=view" img="components/com_mijosef/assets/images/icon-16-metadata.png">COM_COM_MIJOSEF_METADATA</menu>
+	      	<menu link="option=com_mijosef&amp;controller=sitemap&amp;task=view" img="components/com_mijosef/assets/images/icon-16-sitemap.png">COM_COM_MIJOSEF_SITEMAP</menu>
+	      	<menu link="option=com_mijosef&amp;controller=tags&amp;task=view" img="components/com_mijosef/assets/images/icon-16-tags.png">COM_COM_MIJOSEF_TAGS</menu>
+	      	<menu link="option=com_mijosef&amp;controller=ilinks&amp;task=view" img="components/com_mijosef/assets/images/icon-16-ilinks.png">COM_COM_MIJOSEF_ILINKS</menu>
+	      	<menu link="option=com_mijosef&amp;controller=bookmarks&amp;task=view" img="components/com_mijosef/assets/images/icon-16-bookmarks.png">COM_COM_MIJOSEF_BOOKMARKS</menu>
+	      	<menu link="option=com_mijosef&amp;controller=upgrade&amp;task=view" img="components/com_mijosef/assets/images/icon-16-upgrade.png">COM_COM_MIJOSEF_UPGRADE</menu>
+	      	<menu link="option=com_mijosef&amp;controller=support&amp;task=support" img="components/com_mijosef/assets/images/icon-16-support.png">COM_COM_MIJOSEF_SUPPORT</menu>
+	    </submenu>
+		
+		<files folder="admin">
+			<!-- Files -->
+			<filename>index.html</filename>
+			<filename>mijosef.php</filename>
+			<filename>install.sql</filename>
+			<filename>permissions.xml</filename>
+			<filename>toolbar.php</filename>
+			<!-- Folders -->
+			<folder>adapters</folder>
+			<folder>assets</folder>
+			<folder>controllers</folder>
+			<folder>extensions</folder>
+			<folder>library</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+		</files>
+		<languages folder="languages/admin">
+			<language tag="en-GB">en-GB/en-GB.com_mijosef.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_mijosef.sys.ini</language>
+		</languages>
+	</administration>
+	
+	<!-- Install/Uninstall SQL -->
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">install.sql</file>
+		</sql>
+	</install>
+	
+	<!-- Install/Uninstall File -->
+	<scriptfile>script.php</scriptfile>
+	
+	<!-- Akeeba Backup -->
+	<restorepoint>
+		<customdirs>
+			<!-- Add the site and administrator modules -->
+			<dir>administrator/modules/mod_mijosef_quickicons</dir>
+			<!-- Add the plugin (Joomla! 1.6 and later) -->
+			<dir>plugins/system/mijosef</dir>
+			<dir>plugins/system/mijosefmetacontent</dir>
+		</customdirs>
+		<langfiles>
+			<!-- Language files of the modules -->
+			<lang>mod_mijosef_quickicons</lang>
+		</langfiles>
+	</restorepoint>
+	
+	<!-- Finish -->
+</extension>

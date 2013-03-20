@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <config>
+        <fieldset name="permissions" label="JCONFIG_PERMISSIONS_LABEL" description="JCONFIG_PERMISSIONS_DESC">
+            <field name="rules" type="rules" label="JCONFIG_PERMISSIONS_LABEL" filter="rules" component="com_mijosef" section="component">
+                <action name="core.admin" title="JACTION_ADMIN" description="JACTION_ADMIN_COMPONENT_DESC" />
+                <action name="core.manage" title="JACTION_MANAGE" description="JACTION_MANAGE_COMPONENT_DESC" />
+                <action name="extensions" title="COM_MIJOSEF_COMMON_EXTENSIONS" description="COM_MIJOSEF_PERMISSIONS_HELP" />
+                <action name="purgeupdate" title="COM_MIJOSEF_COMMON_PURGEUPDATE" description="COM_MIJOSEF_PERMISSIONS_HELP" />
+                <action name="restoremigrate" title="COM_MIJOSEF_COMMON_RESTOREMIGRATE" description="COM_MIJOSEF_PERMISSIONS_HELP" />
+                <action name="upgrade" title="COM_MIJOSEF_COMMON_UPGRADE" description="COM_MIJOSEF_PERMISSIONS_HELP" />
+                <action name="urls" title="COM_MIJOSEF_COMMON_URLS" description="COM_MIJOSEF_PERMISSIONS_HELP" />
+                <action name="metadata" title="COM_MIJOSEF_COMMON_METADATA" description="COM_MIJOSEF_PERMISSIONS_HELP" />
+                <action name="sitemap" title="COM_MIJOSEF_COMMON_SITEMAP" description="COM_MIJOSEF_PERMISSIONS_HELP" />
+                <action name="tags" title="COM_MIJOSEF_COMMON_TAGS" description="COM_MIJOSEF_PERMISSIONS_HELP" />
+                <action name="ilinks" title="COM_MIJOSEF_COMMON_ILINKS" description="COM_MIJOSEF_PERMISSIONS_HELP" />
+                <action name="bookmarks" title="COM_MIJOSEF_COMMON_BOOKMARKS" description="COM_MIJOSEF_PERMISSIONS_HELP" />
+            </field>
+        </fieldset>
+    </config>
+</form>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5" method="upgrade">
+	<name>Social Login And Social Share</name>
+	<license>Open Source License, GPL v2 based</license>
+	<author>LoginRadius</author>
+	<authorEmail>developers@loginradius.com</authorEmail>
+	<authorUrl>http://www.loginradius.com</authorUrl>
+	<creationDate>2012-01-01</creationDate>
+	<copyright>2012, LoginRadius</copyright>
+	<version>2.0</version>
+	<description><![CDATA[Let your users log in and share via their accounts with popular ID providers such as Facebook, Google, Twitter, Vkontakte and over 20 more!.]]>
+	</description>
+
+	<!-- Installation -->	
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">install/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<installfile>install/install.php</installfile>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">install/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	<uninstallfile>install/uninstall.php</uninstallfile>
+		
+	<!-- Component -->
+	<files folder="site">				
+		<filename>index.html</filename>
+		<filename>edit.xml</filename>
+		<filename>metadata.xml</filename>
+		<filename>socialloginandsocialshare.php</filename>
+		<filename>controller.php</filename>
+		<filename>router.php</filename>
+		<folder>views</folder>
+		<folder>controllers</folder>
+		<folder>models</folder>
+		<folder>helpers</folder>		
+	</files>
+	<media destination="com_socialloginandsocialshare" folder="media">
+		<filename>index.html</filename>
+		<folder>images</folder>
+	</media>
+	
+	<!-- Administration -->
+	<administration>
+		<menu img="../media/com_socialloginandsocialshare/images/favicon.png">COM_SOCIALLOGINANDSOCIALSHARE</menu>
+		<files folder="admin">
+			<folder>assets</folder>
+			<folder>install</folder>
+			<folder>models</folder>
+			<folder>views</folder>
+			<file>index.html</file>
+			<file>controller.php</file>
+			<file>socialloginandsocialshare.php</file>
+		</files>
+		<languages folder="admin/language">
+			    <language tag="en-GB">en-GB/en-GB.com_socialloginandsocialshare.ini</language>
+		        <language tag="en-GB">en-GB/en-GB.com_socialloginandsocialshare.sys.ini</language>
+		        <language tag="fr-FR">fr-FR/fr-FR.com_socialloginandsocialshare.ini</language>
+		        <language tag="fr-FR">fr-FR/fr-FR.com_socialloginandsocialshare.sys.ini</language>
+				<language tag="es-ES">es-ES/es-ES.com_socialloginandsocialshare.ini</language>
+		        <language tag="es-ES">es-ES/es-ES.com_socialloginandsocialshare.sys.ini</language>
+                <language tag="ru-RU">ru-RU/ru-RU.com_socialloginandsocialshare.ini</language>
+		        <language tag="ru-RU">ru-RU/ru-RU.com_socialloginandsocialshare.sys.ini</language>
+		        <language tag="it-IT">it-IT/it-IT.com_socialloginandsocialshare.ini</language>
+		        <language tag="it-IT">it-IT/it-IT.com_socialloginandsocialshare.sys.ini</language>
+		        <language tag="de-DE">de-DE/de-DE.com_socialloginandsocialshare.ini</language>
+		        <language tag="de-DE">de-DE/de-DE.com_socialloginandsocialshare.sys.ini</language>
+		        <language tag="da-DK">da-DK/da-DK.com_socialloginandsocialshare.ini</language>
+		        <language tag="da-DK">da-DK/da-DK.com_socialloginandsocialshare.sys.ini</language>
+		        <language tag="el-GR">el-GR/el-GR.com_socialloginandsocialshare.ini</language>
+		        <language tag="el-GR">el-GR/el-GR.com_socialloginandsocialshare.sys.ini</language>
+		        <language tag="uk-UA">uk-UA/uk-UA.com_socialloginandsocialshare.ini</language>
+		        <language tag="uk-UA">uk-UA/uk-UA.com_socialloginandsocialshare.sys.ini</language>
+		        <language tag="ar-AA">ar-AA/ar-AA.com_socialloginandsocialshare.ini</language>
+		        <language tag="ar-AA">ar-AA/ar-AA.com_socialloginandsocialshare.sys.ini</language>
+		        <language tag="nl-NL">nl-NL/nl-NL.com_socialloginandsocialshare.ini</language>
+		        <language tag="nl-NL">nl-NL/nl-NL.com_socialloginandsocialshare.sys.ini</language>
+		        <language tag="et-EE">et-EE/et-EE.com_socialloginandsocialshare.ini</language>
+		        <language tag="et-EE">et-EE/et-EE.com_socialloginandsocialshare.sys.ini</language>
+		        <language tag="pl-PL">pl-PL/pl-PL.com_socialloginandsocialshare.ini</language>
+		        <language tag="pl-PL">pl-PL/pl-PL.com_socialloginandsocialshare.sys.ini</language>
+                <language tag="pt-PT">pt-PT/pt-PT.com_socialloginandsocialshare.ini</language>
+		        <language tag="pt-PT">pt-PT/pt-PT.com_socialloginandsocialshare.sys.ini</language>
+		</languages>
+	</administration>	
+	<languages folder="language">
+	            <language tag="en-GB">en-GB/en-GB.com_socialloginandsocialshare.ini</language>
+				<language tag="fr-FR">fr-FR/fr-FR.com_socialloginandsocialshare.ini</language>
+				<language tag="es-ES">es-ES/es-ES.com_socialloginandsocialshare.ini</language>
+				<language tag="ru-RU">ru-RU/ru-RU.com_socialloginandsocialshare.ini</language>
+				<language tag="it-IT">it-IT/it-IT.com_socialloginandsocialshare.ini</language>
+				<language tag="de-DE">de-DE/de-DE.com_socialloginandsocialshare.ini</language>
+				<language tag="da-DK">da-DK/da-DK.com_socialloginandsocialshare.ini</language>
+				<language tag="el-GR">el-GR/el-GR.com_socialloginandsocialshare.ini</language>
+				<language tag="uk-UA">uk-UA/uk-UA.com_socialloginandsocialshare.ini</language>
+				<language tag="ar-AA">ar-AA/ar-AA.com_socialloginandsocialshare.ini</language>
+				<language tag="nl-NL">nl-NL/nl-NL.com_socialloginandsocialshare.ini</language>
+				<language tag="et-EE">et-EE/et-EE.com_socialloginandsocialshare.ini</language>
+				<language tag="pl-PL">pl-PL/pl-PL.com_socialloginandsocialshare.ini</language>
+				<language tag="pt-PT">pt-PT/pt-PT.com_socialloginandsocialshare.ini</language>
+		        <language tag="en-GB">en-GB/en-GB.mod_socialloginandsocialshare.ini</language>
+				<language tag="en-GB">en-GB/en-GB.mod_socialloginandsocialshare.sys.ini</language>
+		        <language tag="fr-FR">fr-FR/fr-FR.mod_socialloginandsocialshare.ini</language>
+		        <language tag="fr-FR">fr-FR/fr-FR.mod_socialloginandsocialshare.sys.ini</language>
+                <language tag="es-ES">es-ES/es-ES.mod_socialloginandsocialshare.ini</language>
+		        <language tag="es-ES">es-ES/es-ES.mod_socialloginandsocialshare.sys.ini</language>
+                <language tag="ru-RU">ru-RU/ru-RU.mod_socialloginandsocialshare.ini</language>
+		        <language tag="ru-RU">ru-RU/ru-RU.mod_socialloginandsocialshare.sys.ini</language>
+		        <language tag="it-IT">it-IT/it-IT.mod_socialloginandsocialshare.ini</language>
+		        <language tag="it-IT">it-IT/it-IT.mod_socialloginandsocialshare.sys.ini</language>
+		        <language tag="de-DE">de-DE/de-DE.mod_socialloginandsocialshare.ini</language>
+		        <language tag="de-DE">de-DE/de-DE.mod_socialloginandsocialshare.sys.ini</language>
+		        <language tag="da-DK">da-DK/da-DK.mod_socialloginandsocialshare.ini</language>
+		        <language tag="da-DK">da-DK/da-DK.mod_socialloginandsocialshare.sys.ini</language>
+		        <language tag="el-GR">el-GR/el-GR.mod_socialloginandsocialshare.ini</language>
+		        <language tag="el-GR">el-GR/el-GR.mod_socialloginandsocialshare.sys.ini</language>
+		        <language tag="uk-UA">uk-UA/uk-UA.mod_socialloginandsocialshare.ini</language>
+		        <language tag="uk-UA">uk-UA/uk-UA.mod_socialloginandsocialshare.sys.ini</language>
+		        <language tag="ar-AA">ar-AA/ar-AA.mod_socialloginandsocialshare.ini</language>
+		        <language tag="ar-AA">ar-AA/ar-AA.mod_socialloginandsocialshare.sys.ini</language>
+		        <language tag="nl-NL">nl-NL/nl-NL.mod_socialloginandsocialshare.ini</language>
+		        <language tag="nl-NL">nl-NL/nl-NL.mod_socialloginandsocialshare.sys.ini</language>
+		        <language tag="et-EE">et-EE/et-EE.mod_socialloginandsocialshare.ini</language>
+		        <language tag="et-EE">et-EE/et-EE.mod_socialloginandsocialshare.sys.ini</language>
+		        <language tag="pl-PL">pl-PL/pl-PL.mod_socialloginandsocialshare.ini</language>
+		        <language tag="pl-PL">pl-PL/pl-PL.mod_socialloginandsocialshare.sys.ini</language>
+                <language tag="pt-PT">pt-PT/pt-PT.mod_socialloginandsocialshare.ini</language>
+		        <language tag="pt-PT">pt-PT/pt-PT.mod_socialloginandsocialshare.sys.ini</language>
+          </languages>
+	
+	<!-- Modules -->
+	<modules>
+		<module module="mod_socialloginandsocialshare" title="Social Login And Social Share" position="position-7" order="8" client="site" language="*" showtitle="0">
+			<files folder="mod_socialloginandsocialshare">
+	            <filename>mod_socialloginandsocialshare.xml</filename>
+                <filename module="mod_socialloginandsocialshare">mod_socialloginandsocialshare.php</filename>
+	            <filename module="mod_socialloginandsocialshare">helper.php</filename>
+	            <filename module="mod_socialloginandsocialshare">lrstyle.css</filename>
+	            <filename module="mod_socialloginandsocialshare">index.html</filename>
+	            <filename module="mod_socialloginandsocialshare">tmpl/default.php</filename>
+	            <filename module="mod_socialloginandsocialshare">tmpl/index.html</filename>
+		    </files>
+	        
+			
+		</module>
+	</modules>	
+	
+	<!-- Plugins -->
+	<plugins>
+		<plugin plugin="socialloginandsocialshare" title="System - Social Login" order="-100" group="system">
+			<files folder="plg_socialloginandsocialshare">
+				<file plugin="socialloginandsocialshare">socialloginandsocialshare.php</file>
+		        <file>LoginRadius.php</file>
+				<file>socialloginandsocialshare_helper.php</file>
+				<file>socialloginandsocialshare.xml</file>				
+			</files>
+		</plugin>
+		<plugin plugin="socialshare" title="Content - Social Share" order="-100" group="content">
+			<files folder="plg_socialshare">
+				<file plugin="socialshare">socialshare.php</file>
+		        <file>socialshare.xml</file>				
+			</files>
+		</plugin>
+	</plugins>	
+	
+	<!-- Jomfish -->
+	<joomfish>
+		<file>socialloginandsocialshare.xml</file>
+	</joomfish>
+</extension>

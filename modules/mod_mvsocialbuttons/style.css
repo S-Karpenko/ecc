@@ -1,0 +1,12 @@
+.mv-socialbuttons-mod {  width: 100%; display: block; overflow: hidden; clear: both }
+.mv-socialbuttons-mod h4 { margin-top: 10px; 	margin-bottom: 10px }
+.mv-sbb-nl{ border-top: none; border-bottom: none }
+.mv-sbb-tl{ border-top: thin solid #808080; border-bottom: none; padding-top: 5px }
+.mv-sbb-bl{ border-top: none; border-bottom: thin solid #808080; padding-bottom: 5px; overflow: hidden }
+.mv-sbb-bothl{ border-top: thin solid #808080; border-bottom: thin solid #808080; padding-top: 5px; padding-bottom: 5px; overflow: hidden }
+.mv-sb-left{ text-align: left }
+.mv-sb-left a{ border: 0 !important; margin-right: 5px }
+.mv-sb-right{ text-align: right }
+.mv-sb-right a{ border: 0 !important; margin-left: 5px }
+.mv-sb-center{ margin-left: auto; margin-right: auto; text-align: center !important }
+.mv-sb-center a{ border: 0 !important; margin-left: 5px }

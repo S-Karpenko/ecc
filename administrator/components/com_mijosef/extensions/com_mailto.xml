@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="mijosef_ext" version="1.5.0" method="upgrade">
+	<name>Mail To</name>
+	<author>Mijosoft LLC</author>
+	<creationDate>August 2012</creationDate>
+	<copyright>(C) 2009-2012 Mijosoft LLC</copyright>
+	<license>GNU/GPL http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>info@mijosoft.com</authorEmail>
+	<authorUrl>www.mijosoft.com</authorUrl>
+	<version>1.1.0</version>
+	<description>Mail To extension for MijoSEF.</description>
+
+	<files>
+		<filename mijosef_ext="com_mailto">com_mailto.php</filename>
+	</files>
+
+    <install>
+   		<defaultParams>
+   			<defaultParam name="prefix" value="mail" />
+   		</defaultParams>
+   	</install>
+
+	<params group="url">
+		<param name="remove_url_suffix" type="radio" default="0" label="Remove URL suffix" description="Remove URL suffix">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+
+    <config>
+   		<fields name="params">
+   			<fieldset name="url">
+                <field name="remove_url_suffix" type="radio" default="0" label="Remove URL suffix" description="Remove URL suffix">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</install>

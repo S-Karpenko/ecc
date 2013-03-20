@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="plugin" group="content" method="upgrade">
+	<name>JoomLine Like</name>
+	<author>JoomLine</author>
+	<creationDate>Mar 2012</creationDate>
+	<copyright>(C) 2012 by Vadim Kunicin(http://www.joomline.ru)</copyright>
+	<license>GNU/GPL: http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>vadim@joomline.ru</authorEmail>
+	<authorUrl>http://joomline.ru</authorUrl>
+	<version>1.5</version>
+	<description>Plugin allow integrate social buttons like into your joomla site</description>
+	<files>
+		<folder>js</folder>
+		<folder>models</folder>
+		<filename plugin="jllike">jllike.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_content_jllike.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.plg_content_jllike.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="autoAdd" type="radio" default="0" label="PLG_JLLIKE_AUTOADD_LABEL" description="PLG_JLLIKE_AUTOADD_DESC">
+				  <option value="0">PLG_JLLIKE_NO</option>
+				  <option value="1">PLG_JLLIKE_YES</option>
+				</field>
+				<field name="categories" type="category" extension='com_content' default="0" multiple="multiple"
+						label="PLG_JLLIKE_EXCLUDE_CATEGORY_LABEL"
+						description="PLG_JLLIKE_EXCLUDE_CATEGORY_DESC"/>
+				<field name="pathbase" type="text" label="PLG_JLLIKE_PRIORITE_DOMEN_LABEL" default="0" description="PLG_JLLIKE_PRIORITE_DOMEN_DESC"/>
+				<field name="addfacebook" type="radio" default="1" label="PLG_JLLIKE_ENABLE_FC" description="">
+				  <option value="0">PLG_JLLIKE_NO</option>
+				  <option value="1">PLG_JLLIKE_YES</option>
+				</field>
+				<field name="addvk" type="radio" default="1" label="PLG_JLLIKE_ENABLE_VK" description="">
+				  <option value="0">PLG_JLLIKE_NO</option>
+				  <option value="1">PLG_JLLIKE_YES</option>
+				</field>
+				<field name="addtw" type="radio" default="1" label="PLG_JLLIKE_ENABLE_TW" description="">
+				  <option value="0">PLG_JLLIKE_NO</option>
+				  <option value="1">PLG_JLLIKE_YES</option>
+				</field>
+				<field name="addod" type="radio" default="1" label="PLG_JLLIKE_ENABLE_OD" description="">
+				  <option value="0">PLG_JLLIKE_NO</option>
+				  <option value="1">PLG_JLLIKE_YES</option>
+				</field>
+				<field name="addgp" type="radio" default="1" label="PLG_JLLIKE_ENABLE_GG" description="">
+				  <option value="0">PLG_JLLIKE_NO</option>
+				  <option value="1">PLG_JLLIKE_YES</option>
+				</field>
+				
+			</fieldset>
+		</fields>
+	</config>
+</extension>

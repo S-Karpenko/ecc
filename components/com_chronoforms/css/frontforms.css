@@ -7,10 +7,10 @@
 /*================   FORMS STYLES   =================*/
 
 .ccms_form_element p { margin-bottom: 9px;}
-.ccms_form_element input, textarea, input[type="file"]  {padding: 6px !important;  border: 1px solid #d3d3d3; margin-bottom: 5px; }
+.ccms_form_element input, textarea, input[type="file"]  {padding: 6px !important;  border: 1px solid green; margin-bottom: 5px; background:#FFF;}
 .ccms_form_element select { padding: 3px; border: 1px solid #d3d3d3; min-width: 100px;}
 /*.ccms_form_element select { min-width: 163px; }*/
-.ccms_form_element label { float: left; width: 150px; line-height: 18px; margin: 6px 0 9px ; font-weight: bold;}
+.ccms_form_element label { float: left; width: 150px; line-height: 18px; margin: -13px 0 -4px ; font-weight: bold;}
 .ccms_form_element fieldset  {
 background-color:#FAFAFA;
 border:1px solid #EEEEEE;
@@ -18,7 +18,7 @@ padding:15px;
 width:auto; }
 .ccms_form_element fieldset legend {font-weight:bold; margin-left:-10px; padding:10px; }
 
-.ccms_form_element { margin-bottom: 10px; position: relative; padding: 10px 0px 10px 5px; /*border-bottom: 1px solid #dddddd;*/ clear: both;}
+.ccms_form_element { margin-bottom: -10px; position: relative; padding: 10px 0px 10px 5px; /*border-bottom: 1px solid #dddddd;*/ clear: both;}
 
 /*.cfdiv_select select,
 .cfdiv_text input, .cfdiv_text label { float: left; }*/

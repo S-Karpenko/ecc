@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="mijosef_ext" version="1.5.0" method="upgrade">
+	<name>News Feeds</name>
+	<author>Mijosoft LLC</author>
+	<creationDate>June 2010</creationDate>
+	<copyright>(C) 2009-2012 Mijosoft LLC</copyright>
+	<license>GNU/GPL http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>info@mijosoft.com</authorEmail>
+	<authorUrl>www.mijosoft.com</authorUrl>
+	<version>1.1.0</version>
+	<description>News Feeds extension for MijoSEF.</description>
+
+	<files>
+		<filename mijosef_ext="com_newsfeeds">com_newsfeeds.php</filename>
+	</files>
+
+    <hasCats>1</hasCats>
+
+	<params group="url">
+		<param name="feed_part" type="list" default="global" label="COM_MIJOSEF_PARAMS_NEWSFEEDS_PART_FEED" description="COM_MIJOSEF_PARAMS_NEWSFEEDS_PART_FEED">
+ 			<option value="global">Use Global</option>
+ 			<option value="title">COM_MIJOSEF_COMMON_TITLE_FIELD</option>
+ 			<option value="alias">COM_MIJOSEF_COMMON_ALIAS_FIELD</option>
+ 		</param>
+		<param name="category_part" type="list" default="global" label="COM_MIJOSEF_PARAMS_URL_PART_CATEGORY" description="COM_MIJOSEF_PARAMS_URL_PART_CATEGORY">
+ 			<option value="global">Use Global</option>
+ 			<option value="title">COM_MIJOSEF_COMMON_TITLE_FIELD</option>
+ 			<option value="alias">COM_MIJOSEF_COMMON_ALIAS_FIELD</option>
+ 		</param>
+		<param type="spacer" default="&lt;hr/&gt;" />
+		<param name="feedid_inc" type="radio" default="1" label="COM_MIJOSEF_PARAMS_NEWSFEEDS_FEED_ID" description="COM_MIJOSEF_PARAMS_NEWSFEEDS_FEED_ID_HELP">
+ 			<option value="1">No</option>
+ 			<option value="2">Yes</option>
+ 		</param>
+ 		<param name="category_inc" type="radio" default="2" label="COM_MIJOSEF_PARAMS_URL_CATEGORY" description="COM_MIJOSEF_PARAMS_URL_CATEGORY_HELP">
+ 			<option value="1">No</option>
+ 			<option value="2">Yes</option>
+ 		</param>
+		<param name="categoryid_inc" type="radio" default="1" label="COM_MIJOSEF_PARAMS_URL_CATEGORY_ID" description="COM_MIJOSEF_PARAMS_URL_CATEGORY_ID_HELP">
+ 			<option value="1">No</option>
+ 			<option value="2">Yes</option>
+ 		</param>
+	</params>
+
+    <config>
+   		<fields name="params">
+   			<fieldset name="url">
+                <field name="feed_part" type="list" default="global" label="COM_MIJOSEF_PARAMS_NEWSFEEDS_PART_FEED" description="COM_MIJOSEF_PARAMS_NEWSFEEDS_PART_FEED">
+                    <option value="global">Use Global</option>
+                    <option value="title">COM_MIJOSEF_COMMON_TITLE_FIELD</option>
+                    <option value="alias">COM_MIJOSEF_COMMON_ALIAS_FIELD</option>
+                </field>
+                <field name="category_part" type="list" default="global" label="COM_MIJOSEF_PARAMS_URL_PART_CATEGORY" description="COM_MIJOSEF_PARAMS_URL_PART_CATEGORY">
+                    <option value="global">Use Global</option>
+                    <option value="title">COM_MIJOSEF_COMMON_TITLE_FIELD</option>
+                    <option value="alias">COM_MIJOSEF_COMMON_ALIAS_FIELD</option>
+                </field>
+                <field type="spacer" default="&lt;hr/&gt;" />
+                <field name="feedid_inc" type="radio" default="1" label="COM_MIJOSEF_PARAMS_NEWSFEEDS_FEED_ID" description="COM_MIJOSEF_PARAMS_NEWSFEEDS_FEED_ID_HELP">
+                    <option value="1">No</option>
+                    <option value="2">Yes</option>
+                </field>
+                <field name="category_inc" type="radio" default="2" label="COM_MIJOSEF_PARAMS_URL_CATEGORY" description="COM_MIJOSEF_PARAMS_URL_CATEGORY_HELP">
+                    <option value="1">No</option>
+                    <option value="2">Yes</option>
+                </field>
+                <field name="categoryid_inc" type="radio" default="1" label="COM_MIJOSEF_PARAMS_URL_CATEGORY_ID" description="COM_MIJOSEF_PARAMS_URL_CATEGORY_ID_HELP">
+                    <option value="1">No</option>
+                    <option value="2">Yes</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</install>

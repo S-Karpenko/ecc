@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+	<name>MOD_MVSOCIALBUTTONS</name>
+	<author>Vladimir Maidanichenko</author>
+	<copyright>Copyright (C) 2012 Vladimir Maidanichenko ( Joomlamaster.org.ua )</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>support@joomlamaster.org.ua</authorEmail>
+	<authorUrl>http://joomlamaster.org.ua</authorUrl>
+	<version>3.0</version>
+	<creationDate>2012-12-14</creationDate>
+	<description>MOD_MVSOCIALBUTTONS_DESC</description>
+	
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.mod_mvsocialbuttons.ini</language>
+		<language tag="en-GB">en-GB/en-GB.mod_mvsocialbuttons.sys.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.mod_mvsocialbuttons.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.mod_mvsocialbuttons.sys.ini</language>
+		<language tag="uk-UA">uk-UA/uk-UA.mod_mvsocialbuttons.ini</language>
+		<language tag="uk-UA">uk-UA/uk-UA.mod_mvsocialbuttons.sys.ini</language>
+		<language tag="be-BY">be-BY/be-BY.mod_mvsocialbuttons.ini</language>
+		<language tag="be-BY">be-BY/be-BY.mod_mvsocialbuttons.sys.ini</language>
+	</languages>    
+	
+	<files>
+		<filename module="mod_mvsocialbuttons">mod_mvsocialbuttons.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<filename>style.css</filename>
+		<filename>shorturl.php</filename>
+		<folder>images</folder>
+		<folder>tmpl</folder>
+	</files>
+	
+    <help url="MOD_MVSOCIALBUTTONS_HELP_URL" />
+    
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="icons_package" type="list" default="socialsmall" label="MOD_MVSOCIALBUTTONS_ICONS" description="MOD_MVSOCIALBUTTONS_ICONS_DESC" >				      
+                   <option value="circular">Circular 32px</option>         
+                   <option value="socialmini">Social Small 16x16px</option>
+                   <option value="socialsmall">Social Small 32x32px</option>
+                   <option value="socialbig">Social Big 64x64px</option>
+				</field>
+									
+				<field name="showTitle" type="radio" class="btn-group" default="1" label="MOD_MVSOCIALBUTTONS_DISPLAY_TITLE" description="MOD_MVSOCIALBUTTONS_DISPLAY_TITLE_DESC" >
+				   <option value="0">JNO</option>
+				   <option value="1">JYES</option>
+				</field>
+				<field name="title" type="text" default="Share this post" size="80" label="MOD_MVSOCIALBUTTONS_TITLE" description="MOD_MVSOCIALBUTTONS_TITLE_DESC" />
+				
+				<field name="displayLines" type="list" default="mv-sbb-bothl" label="MOD_MVSOCIALBUTTONS_DISPLAY_LINES" description="MOD_MVSOCIALBUTTONS_DISPLAY_LINES_DESC" >
+				   <option value="mv-sbb-nl">MOD_MVSOCIALBUTTONS_NONE</option>
+				   <option value="mv-sbb-tl">MOD_MVSOCIALBUTTONS_ONLY_TOP</option>
+				   <option value="mv-sbb-bl">MOD_MVSOCIALBUTTONS_ONLY_BOTTOM</option>
+				   <option value="mv-sbb-bothl">MOD_MVSOCIALBUTTONS_BOTH</option>
+				</field>
+				
+				<field name="displayIcons" type="list" default="mv-sbb-left" label="MOD_MVSOCIALBUTTONS_ICONS_POSITION" description="MOD_MVSOCIALBUTTONS_ICONS_POSITION_DESC" >
+				   <option value="mv-sb-left">MOD_MVSOCIALBUTTONS_LEFT</option>
+				   <option value="mv-sb-right">MOD_MVSOCIALBUTTONS_RIGHT</option>
+				   <option value="mv-sb-center">MOD_MVSOCIALBUTTONS_CENTER</option>
+				</field>
+				
+				<field name="displayDelicious" type="radio" class="btn-group" default="1" label="MOD_MVSOCIALBUTTONS_DISPLAY_DELICIOUS" description="MOD_MVSOCIALBUTTONS_DISPLAY_DELICIOUS_DESC" >
+				   <option value="0">JNO</option>
+                   <option value="1">JYES</option>
+				</field>
+				<field name="displayDigg" type="radio" class="btn-group" default="1" label="MOD_MVSOCIALBUTTONS_DISPLAY_DIGG" description="MOD_MVSOCIALBUTTONS_DISPLAY_DIGG_DESC" >
+				   <option value="0">JNO</option>
+                   <option value="1">JYES</option>
+				</field>
+				<field name="displayFacebook" type="radio" class="btn-group" default="1" label="MOD_MVSOCIALBUTTONS_DISPLAY_FACEBOOK" description="MOD_MVSOCIALBUTTONS_DISPLAY_FACEBOOK_DESC" >
+				   <option value="0">JNO</option>
+                   <option value="1">JYES</option>
+				</field>
+				<field name="displayGoogle" type="radio" class="btn-group" default="1" label="MOD_MVSOCIALBUTTONS_DISPLAY_GOOGLE" description="MOD_MVSOCIALBUTTONS_DISPLAY_GOOGLE_DESC" >
+				   <option value="0">JNO</option>
+                   <option value="1">JYES</option>
+				</field>
+				<field name="displayLinkedIn" type="radio" class="btn-group" default="1" label="MOD_MVSOCIALBUTTONS_DISPLAY_LINKEDIN" description="MOD_MVSOCIALBUTTONS_DISPLAY_LINKEDIN_DESC" >
+				   <option value="0">JNO</option>
+                   <option value="1">JYES</option>
+				</field>
+				<field name="displaySumbleUpon" type="radio" class="btn-group" default="1" label="MOD_MVSOCIALBUTTONS_DISPLAY_SUMBLEUPON" description="MOD_MVSOCIALBUTTONS_DISPLAY_SUMBLEUPON_DESC" >
+				   <option value="0">JNO</option>
+                   <option value="1">JYES</option>
+				</field>
+				<field name="displayTechnorati" type="radio" class="btn-group" default="1" label="MOD_MVSOCIALBUTTONS_DISPLAY_TECHNORATI" description="MOD_MVSOCIALBUTTONS_DISPLAY_TECHNORATI_DESC" >
+				   <option value="0">JNO</option>
+                   <option value="1">JYES</option>
+				</field>
+				<field name="displayTwitter" type="radio" class="btn-group" default="1" label="MOD_MVSOCIALBUTTONS_DISPLAY_TWITTER" description="MOD_MVSOCIALBUTTONS_DISPLAY_TWITTER_DESC" >
+				   <option value="0">JNO</option>
+                   <option value="1">JYES</option>
+				</field>
+				
+				<field name="displayBobrdobr" type="radio" class="btn-group" default="1" label="MOD_MVSOCIALBUTTONS_DISPLAY_BOBRDOBR" description="MOD_MVSOCIALBUTTONS_DISPLAY_BOBRDOBR_DESC" >
+				   <option value="0">JNO</option>
+                   <option value="1">JYES</option>
+				</field>
+				
+				<field name="displayLiveinternet" type="radio" class="btn-group" default="1" label="MOD_MVSOCIALBUTTONS_DISPLAY_LIVEINTERNET" description="MOD_MVSOCIALBUTTONS_DISPLAY_LIVEINTERNET_DESC" >
+				   <option value="0">JNO</option>
+                   <option value="1">JYES</option>
+				</field>
+				
+				<field name="displayLivejournal" type="radio" class="btn-group" default="1" label="MOD_MVSOCIALBUTTONS_DISPLAY_LIVEJOURNAL" description="MOD_MVSOCIALBUTTONS_DISPLAY_LIVEJOURNAL_DESC" >
+				   <option value="0">JNO</option>
+                   <option value="1">JYES</option>
+				</field>
+				
+				<field name="displayMoymir" type="radio" class="btn-group" default="1" label="MOD_MVSOCIALBUTTONS_DISPLAY_MOYMIR" description="MOD_MVSOCIALBUTTONS_DISPLAY_MOYMIR_DESC" >
+				   <option value="0">JNO</option>
+                   <option value="1">JYES</option>
+				</field>
+				
+				<field name="displayOdnoklassniki" type="radio" class="btn-group" default="1" label="MOD_MVSOCIALBUTTONS_DISPLAY_ODNOKLASSNIKI" description="MOD_MVSOCIALBUTTONS_DISPLAY_ODNOKLASSNIKI_DESC" >
+				   <option value="0">JNO</option>
+                   <option value="1">JYES</option>
+				</field>
+				
+				<field name="displayVkcom" type="radio" class="btn-group" default="1" label="MOD_MVSOCIALBUTTONS_DISPLAY_VKCOM" description="MOD_MVSOCIALBUTTONS_DISPLAY_VKCOM_DESC" >
+				   <option value="0">JNO</option>
+                   <option value="1">JYES</option>
+				</field>
+				
+		<field name="displayYaru" type="radio" class="btn-group" default="1" label="MOD_MVSOCIALBUTTONS_DISPLAY_YARU" description="MOD_MVSOCIALBUTTONS_DISPLAY_YARU_DESC" >
+				   <option value="0">JNO</option>
+                   <option value="1">JYES</option>
+				</field>			
+			</fieldset>
+
+            <fieldset name="shortener_url" label="MOD_MVSOCIALBUTTONS_SHORTENER_SETTINGS">
+                <field name="login" type="text" default="" label="MOD_MVSOCIALBUTTONS_LOGIN" description="MOD_MVSOCIALBUTTONS_LOGIN_DESC"/>
+                <field name="apiKey" type="text" default="" size="80" label="MOD_MVSOCIALBUTTONS_API_KEY" description="MOD_MVSOCIALBUTTONS_API_KEY_DESC"/>
+                <field name="shortUrlService" type="list" default="" label="MOD_MVSOCIALBUTTONS_SHORTENER_SERVICE" description="MOD_MVSOCIALBUTTONS_SHORTENER_SERVICE_DESC" >
+                   <option value="">MOD_MVSOCIALBUTTONS_NONE</option>
+                   <option value="google">goo.gl</option>
+                   <option value="bitly">bit.ly</option>
+                   <option value="bitlycom">bitly.com</option>
+                   <option value="jmp">j.mp</option>
+                   <option value="tinycc">tiny.cc</option>
+                </field>
+            </fieldset>
+            
+            <fieldset name="additional_buttons_code" label="MOD_MVSOCIALBUTTONS_ADDITIONAL_BUTTONS">
+                <field name="ebuttons1" type="textarea" default="" label="MOD_MVSOCIALBUTTONS_CUSTOM_CODE" description="MOD_MVSOCIALBUTTONS_EXTRA_DESC" cols="50" rows="10" filter="raw" />
+                <field name="ebuttons2" type="textarea" default="" label="MOD_MVSOCIALBUTTONS_CUSTOM_CODE" description="MOD_MVSOCIALBUTTONS_EXTRA_DESC" cols="50" rows="10" filter="raw" />
+                <field name="ebuttons3" type="textarea" default="" label="MOD_MVSOCIALBUTTONS_CUSTOM_CODE" description="MOD_MVSOCIALBUTTONS_EXTRA_DESC" cols="50" rows="10" filter="raw" />
+                <field name="ebuttons4" type="textarea" default="" label="MOD_MVSOCIALBUTTONS_CUSTOM_CODE" description="MOD_MVSOCIALBUTTONS_EXTRA_DESC" cols="50" rows="10" filter="raw" />
+                <field name="ebuttons5" type="textarea" default="" label="MOD_MVSOCIALBUTTONS_CUSTOM_CODE" description="MOD_MVSOCIALBUTTONS_EXTRA_DESC" cols="50" rows="10" filter="raw" />                
+            </fieldset>
+            
+			<fieldset name="advanced">
+				<field name="moduleclass_sfx"  type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field name="cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+                    <option value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+                <field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />					
+                <field name="spacer1" type="spacer" class="text" label="MOD_MVSOCIALBUTTONS_SOCIALBUTTONS_SETTINGS" />
+                <field name="loadCss" type="radio" class="btn-group" default="1" label="MOD_MVSOCIALBUTTONS_LOAD_STYLE" description="MOD_MVSOCIALBUTTONS_LOAD_STYLE_DESC">
+                   <option value="0">JNO</option>
+                   <option value="1">JYES</option>
+                </field>                
+			</fieldset>
+		</fields>
+	</config>
+</extension>

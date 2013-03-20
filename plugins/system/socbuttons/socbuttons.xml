@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.7" type="plugin" group="system" method="upgrade">
+	<name>System - SocButtons</name>
+	<author>tallib</author>
+	<creationDate>February 2012</creationDate>
+	<copyright>Copyright (C) 2011 Rcreated.com. All rights reserved.</copyright>
+	<authorEmail>sale@Rcreated.com</authorEmail>
+	<authorUrl>http://Rcreated.com/</authorUrl>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>1.5.0</version>
+	<description>PLG_SYSTEM_SOCBUTTONS_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="socbuttons">socbuttons.php</filename>
+		<filename>index.html</filename>
+		<folder>language</folder>
+	</files>
+
+<config>
+		<fields name="params">
+		<fieldset name="basic">
+  		<field name="needle" type="text" default="{socbuttons}" label="Text for replacement" description="Text for replacement"/>
+  		<field name="width" type="text" default="150" label="Width of image" description="Width of image" />
+			</fieldset>
+
+		</fields>
+	</config>
+</extension>

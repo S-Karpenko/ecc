@@ -361,7 +361,7 @@ class CFChronoForm {
 		if($configs->get('licensevalid', 0)){
 			return '';
 		}else{
-			return str_replace('_EXTENSION_NAME_', $extension, '<div class="chronoform"><a href="http://www.chronoengine.com">Powered By _EXTENSION_NAME_ - ChronoEngine.com</a></div>');
+			return str_replace('_EXTENSION_NAME_', $extension);
 		}
 	}
 	

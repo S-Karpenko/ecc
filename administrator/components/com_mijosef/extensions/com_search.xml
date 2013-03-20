@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="mijosef_ext" version="1.5.0" method="upgrade">
+	<name>Search</name>
+	<author>Mijosoft LLC</author>
+	<creationDate>August 2012</creationDate>
+	<copyright>(C) 2009-2012 Mijosoft LLC</copyright>
+	<license>GNU/GPL http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>info@mijosoft.com</authorEmail>
+	<authorUrl>www.mijosoft.com</authorUrl>
+	<version>1.1.0</version>
+	<description>Search extension for MijoSEF.</description>
+
+	<files>
+		<filename mijosef_ext="com_search">com_search.php</filename>
+	</files>
+
+	<install>
+		<defaultParams>
+			<defaultParam name="prefix" value="search" />
+			<defaultParam name="non_sef_vars" value="ordering, searchphrase, submit, searchword, areas" />
+		</defaultParams>
+	</install>
+</install>
