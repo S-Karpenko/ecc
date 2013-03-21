@@ -42,6 +42,7 @@ $app = JFactory::getApplication();
 
     <body>
     <div class="bg_blue"></div>
+    <div class="bg_cloud"></div>
     <div class="wrapper">
         <div class="header">
             <a href="index.php" title="Experimental Creative Center"><img src="../../images/logo.png" width="225" height="156" alt="Experimental Creative Center" /></a>
