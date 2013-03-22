@@ -21,11 +21,8 @@ $app = JFactory::getApplication();
 		<jdoc:include type="head" />
 
 		<!-- The following five lines load the Blueprint CSS Framework (http://blueprintcss.org). If you don't want to use this framework, delete these lines. -->
-		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/blueprint/screen.css" type="text/css" media="screen, projection" />
 		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/blueprint/print.css" type="text/css" media="print" />
 		<!--[if lt IE 8]><link rel="stylesheet" href="blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
-		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/blueprint/plugins/fancy-type/screen.css" type="text/css" media="screen, projection" />
-		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/blueprint/plugins/joomla-nav/screen.css" type="text/css" media="screen" />
 
 		<!-- The following line loads the template CSS file located in the template folder. -->
 		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/template.css" type="text/css" />
@@ -45,7 +42,7 @@ $app = JFactory::getApplication();
     <div class="bg_cloud"></div>
     <div class="wrapper">
         <div class="header">
-            <a href="index.php" title="Experimental Creative Center"><img src="../../images/logo.png" width="225" height="156" alt="Experimental Creative Center" /></a>
+            <a href="index.php" title="Experimental Creative Center"><img src="/images/logo.png" width="225" height="156" alt="Experimental Creative Center" /></a>
             <!--<ul class="social">
                 <li><a class="fb" href="#" title="Facebook">Facebook</a></li>
                 <li><a class="vk" href="#" title="Vkontakte">Vkontakte</a></li>
