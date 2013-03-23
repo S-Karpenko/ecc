@@ -411,3 +411,31 @@ a.oipopp:hover {
 
 
 /**********************************************************************************************************************/
+
+
+/**************************************************************/
+/********************* PAGINATION CLASSES *********************/
+/**************************************************************/
+.pagination{
+    margin: 31px 0 38px 0;
+    text-align: center;
+    overflow: hidden;
+}
+.pagination ul{
+    margin: 0 auto;
+}
+.pagination li{
+    display: inline-block;
+}
+.pagination a,
+.pagination span{
+    float: left;
+    width: 17px;
+    height: 17px;
+    margin: 0 8px 0 0;
+}
+.pagination span{
+    color: #5D9AAE;
+    font-family: 'Arial';
+    font-weight: bold;
+}
