@@ -507,3 +507,22 @@ a.oipopp:hover {
 .jeventpage .contentpaneopen td p img{
     padding: 15px;
 }
+
+/****************************************************/
+/*************** CONTACT FORM CLASSES ***************/
+/****************************************************/
+.contact{
+    padding: 31px;
+}
+.contact-form{
+    margin: 15px 0;
+}
+label.invalid,
+label.invalid span{
+    color: red;
+}
+input.invalid,
+textarea.invalid{
+    border: 1px red solid;
+    color: red;
+}
