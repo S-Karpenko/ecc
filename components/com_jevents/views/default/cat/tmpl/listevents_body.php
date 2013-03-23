@@ -13,7 +13,7 @@ if (strlen($data['catdesc'])>0){
 	echo "<div class='jev_catdesc'>".$data['catdesc']."</div>";
 }
 ?>
-<table align="center" width="90%" cellspacing="0" cellpadding="5" class="ev_table">
+<table align="center" width="100%" cellspacing="0" cellpadding="5" class="ev_table">
 <?php
 $num_events = count($data['rows']);
 $chdate ="";
