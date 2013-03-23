@@ -111,14 +111,16 @@ a:hover                        { text-decoration:none; }
 	text-transform:uppercase;}
 	
 .navbar ul li a.game {
-	 width:124px;}
+	 width:124px;
+}
 	 
-.navbar ul li a:hover {
-	background:url(../images/nav_button_backgroun_hover.png);}
-	
 .navbar ul li a.active {
-	background:url(../images/nav_button_backgroun_hover.png) 0 100%; }
-	
+	background:url(../images/nav_button_backgroun_hover.png) 0 100%;
+}
+.navbar ul li a:hover {
+    background: url(../images/nav_button_backgroun_hover.png) 0 0 repeat-x;
+}
+
 .navbar ul li ul { 
 	display:none;
 	margin-left:-6px;
@@ -276,10 +278,15 @@ li.item107, li.item111  {
 .sidebar .voting label { color:#737373; margin-bottom:13px;}
 /*****************************Partners**************************************************/
 
+.partners h3{
+    text-transform: uppercase;
+    color: #5D9AAE;
+    font-family: 'Arial';
+    font-size: 22px;
+}
 .partners li{
     float:left;
-    margin:0 35px;
-    width:90px;
+    width: 76px;
 }
 
 .partners ul li a{
@@ -438,4 +445,47 @@ a.oipopp:hover {
     color: #5D9AAE;
     font-family: 'Arial';
     font-weight: bold;
+}
+
+
+
+/************************************************************************/
+/************************** HOMEPAGE CLASSES ****************************/
+/************************************************************************/
+.blog-featured h1{
+
+}
+.items-row{
+    padding: 30px 30px 0 30px;
+    overflow: hidden;
+    background: url("../images/homepage_article_bg.jpg") 0 100% repeat-x;
+}
+.items-row .item{
+    overflow: hidden;
+}
+.item h2{
+    margin: 0 0 25px 0;
+}
+.item h2 a{
+    color: #5D9AAE;
+    font-size: 20px;
+    font-family: 'Arial';
+}
+.blog-featured .item p img{
+    margin: 0 20px 20px 0;
+}
+.readmore{
+    overflow: hidden;
+    margin: 22px 0 0 0;
+}
+.readmore a{
+    float: left;
+    color: #5D9AAE;
+    text-decoration: underline;
+}
+.readmore a:hover{
+    text-decoration: none;
+}
+.readmore .published{
+    float: right;
 }

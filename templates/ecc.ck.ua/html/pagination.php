@@ -115,10 +115,10 @@ function pagination_item_active(&$item)
     if ($item->text == 'Prev'){
         $item->text = '&laquo;';
     }
-    if ($item->text == 'Назад'){
+    if ($item->text == 'Попередня'){
         $item->text = '<img src="/templates/ecc.ck.ua/images/prev_button.jpg" alt="Назад" />';
     }
-    if ($item->text == 'Вперёд'){
+    if ($item->text == 'Наступна'){
         $item->text = '<img src="/templates/ecc.ck.ua/images/next_button.jpg" alt="Назад" />';
     }
 
@@ -136,10 +136,10 @@ function pagination_item_inactive(&$item)
     if ($item->text == 'Prev'){
         $item->text = '&laquo;';
     }
-    if ($item->text == 'Назад'){
+    if ($item->text == 'Попередня'){
         $item->text = '<img src="/templates/ecc.ck.ua/images/prev_button.jpg" alt="Назад" />';
     }
-    if ($item->text == 'Вперёд'){
+    if ($item->text == 'Наступна'){
         $item->text = '<img src="/templates/ecc.ck.ua/images/next_button.jpg" alt="Назад" />';
     }
 	return "<span>".$item->text."</span>";

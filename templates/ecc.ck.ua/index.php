@@ -114,7 +114,7 @@ $app = JFactory::getApplication();
                 </div>
                 <div class="partners">
                     <?php if ($this->countModules('position-9')): ?>
-                    <jdoc:include type="modules" name="position-9" style="none" />
+                    <jdoc:include type="modules" name="position-9" style="xhtml" />
                     <?php endif; ?>
                 </div>
 
