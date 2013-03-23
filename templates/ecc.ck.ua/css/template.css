@@ -453,7 +453,12 @@ a.oipopp:hover {
 /************************** HOMEPAGE CLASSES ****************************/
 /************************************************************************/
 .blog-featured h1{
-
+    padding: 10px 0 0 31px;
+    height: 40px;
+    color: #FFFFFF;
+    font: bold 24px 'Arial';
+    text-transform: uppercase;
+    background: url("../images/homepage_title.png") 0 0 no-repeat;
 }
 .items-row{
     padding: 30px 30px 0 30px;
@@ -472,7 +477,7 @@ a.oipopp:hover {
     font-family: 'Arial';
 }
 .blog-featured .item p img{
-    margin: 0 20px 20px 0;
+    margin: 5px 20px 20px 0;
 }
 .readmore{
     overflow: hidden;
