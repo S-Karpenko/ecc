@@ -1,4 +1,4 @@
-<?php 
+<?php
 defined('_JEXEC') or die('Restricted access');
 
 function DefaultViewHelperHeader16($view){
@@ -6,7 +6,7 @@ function DefaultViewHelperHeader16($view){
 	$task = JRequest::getString("jevtask");
 	$view->loadModules("jevprejevents");
 	$view->loadModules("jevprejevents_".$task);
-	
+
 	$dispatcher	=& JDispatcher::getInstance();
 	$dispatcher->trigger( 'onJEventsHeader', array($view));
 
@@ -28,12 +28,12 @@ function DefaultViewHelperHeader16($view){
 
 	$lang = &JFactory::getLanguage();
 ?>
-<div class="contentpaneopen jeventpage<?php echo $params->get( 'pageclass_sfx' ); ?>" id="jevents_header">
+<div class="contentpaneopen jeventpagetitle<?php echo $params->get( 'pageclass_sfx' ); ?>" id="jevents_header">
 	<?php if ($params->get('show_page_heading', 0)) : ?>
 	<h1>
 		<?php echo $view->escape($params->get('page_heading')); ?>
 	</h1>
-	<?php endif; ?>	
+	<?php endif; ?>
 	<?php
 	$t_headline = '&nbsp;';
 	switch ($cfg->get('com_calHeadline', 'comp')) {
@@ -129,7 +129,7 @@ function DefaultViewHelperHeader16($view){
 	}
 	?>
 </div>
-<?php 
+<?php
 	$view->loadModules("jevprejevents2");
 	$view->loadModules("jevprejevents2_".$task);
 ?>

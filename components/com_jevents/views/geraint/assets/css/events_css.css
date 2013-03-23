@@ -3,7 +3,7 @@
 ************************/
 
 #jevents_body{
-    width:100%;
+    width:670px;
 }
 .jeventslight{
 	color:#000000;
@@ -197,8 +197,6 @@ ul.ev_ul {
 	margin:5px!important;
 }
 ul.ev_ul li.ev_td_li {
-  	border-style:solid;
-  	border-width:0 0 0 5px;
   	margin-bottom:1px!important;
   	padding-left:3px!important;
   	background-image:none
@@ -266,28 +264,28 @@ a.ev_link_weekday:hover  {
     /* color: black; */
 }
 .ev_table {
-    border-right: 1px solid black;
-    border-left: 1px solid black;
-    border-bottom: 1px solid black;
+
 }
 .ev_table td {
     padding:5px;
+
 }
 .ev_td_right {
-	/*background-color: #FFDEAD;*/
-    border-top: 1px solid #000000;
+
 }
-.ev_td_left {
-    border-right: 1px solid #000000;
-    border-top: 1px solid #000000;
+.ev_table .ev_td_left {
+    padding: 15px 0 0 15px;
+    color: #7A7B7B;
     font-family: Arial;
     font-size: 12px;
     font-style: normal;
     font-weight: normal;
-    color: black;
     text-align : left;
     vertical-align: top;
     margin-right:1em;
+}
+.ev_table .odd{
+    background: #DDDDDD;
 }
 .ev_td_today {
     background-color: #E9B4A1;
@@ -477,6 +475,7 @@ td#weekview_right a {
 }
 td#weekview_right .ev_td_left {
 	border-right:0px;
+
 }
 td#weekview_right .ev_td_today{
 	border:solid 2px red;

@@ -43,19 +43,12 @@ $app = JFactory::getApplication();
     <div class="wrapper">
         <div class="header">
             <a href="index.php" title="Experimental Creative Center"><img src="/images/logo.png" width="225" height="156" alt="Experimental Creative Center" /></a>
-            <!--<ul class="social">
-                <li><a class="fb" href="#" title="Facebook">Facebook</a></li>
-                <li><a class="vk" href="#" title="Vkontakte">Vkontakte</a></li>
-                <li><a class="tw" href="#" title="Twitter">Twitter</a></li>
-                <li><a class="yt" href="#" title="YouTube">Youtube</a></li>
-                <li><a class="vm" href="#" title="Vimeo">Vimeo</a></li>
-            </ul>-->
         </div>
         <div class="buttons">
-            <a id="facebook-button" class="fly-button" target="_blank" href="https://www.facebook.com/profile.php?id=100002089503948"></a>
-            <a id="twitter-button" class="fly-button" target="_blank" href="https://twitter.com/S_Karpo"></a>
-            <a id="vkontakte-button" class="fly-button" target="_blank" href="http://vk.com/s.karpo"></a>
-            <a id="odnoklassniki-button" class="fly-button" target="_blank" href="#"></a>
+            <a id="facebook-button" class="fly-button" target="_blank" href="http://www.facebook.com/groups/500989506625626/"></a>
+            <a id="twitter-button" class="fly-button" target="_blank" href="#"></a>
+            <a id="vkontakte-button" class="fly-button" target="_blank" href="http://vk.com/club51174283"></a>
+            <a id="odnoklassniki-button" class="fly-button" target="_blank" href="http://www.odnoklassniki.ru/group/54565615829017/"></a>
             <a id="youtube-button" class="fly-button" target="_blank" href="#"></a>
 
         </div>

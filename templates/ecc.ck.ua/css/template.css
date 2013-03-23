@@ -494,3 +494,16 @@ a.oipopp:hover {
 .readmore .published{
     float: right;
 }
+
+/***************************************************/
+/***************** JEvents classes *****************/
+/***************************************************/
+.jeventpage{
+    padding: 31px;
+}
+.jeventpage .contentheading{
+    margin: 0 0 15px 0;
+}
+.jeventpage .contentpaneopen td p img{
+    padding: 15px;
+}
