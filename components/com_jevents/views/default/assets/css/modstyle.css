@@ -33,7 +33,7 @@
 {
     width: 27px;
     height: 25px;
-    font-family: 'Tahoma';
+    font: 12px 'Tahoma';
 	color: #737373;
 	background-color: #FFE4C4;
     border: 1px #E6E6E6 solid;
@@ -75,7 +75,7 @@ a.mod_events_daylink
 }
 .mod_events_td_daywithevents .mod_events_daylink{
     color: #FFFFFF;
-    font-weight: bold;
+    font: bold 14px 'Tahoma';
 }
 a.mod_events_daylink:visited
 {
@@ -125,7 +125,7 @@ a.mod_events_link:hover
 }
 .mod_events_monthyear a.mod_events_link{
     color: #5FC7EF;
-    font-family: 18px 'Arial';
+    font: 18px 'Tahoma';
     font-weight: normal;
 }
 
@@ -221,6 +221,7 @@ div.mod_events_latest_callink a {
     border: none;
     color: #FFFFFF;
     font-weight: normal;
+    font: 14px 'Tahoma';
 }
 .saturday, .sunday{
     color: #218FBB;
