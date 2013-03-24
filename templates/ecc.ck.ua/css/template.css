@@ -247,16 +247,25 @@ li.item107, li.item111  {
 	margin-top:130px;
 }
 .sidebar .calendar {
-    background-color:#FFF;
+
     margin-bottom:10px;
 	width:230px;
-	height:208px;
-	 -webkit-border-radius: 25px;
-	-moz-border-radius: 25px;
-	border-radius: 25px;
 	color:#737373;
 	
 	
+}
+.calendar h3{
+    margin: 0 0 5px 0;
+    font: bold 24px 'Arial';
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.sidebar .calendar .calendar-wrapper{
+    overflow: hidden;
+    background-color:#FFF;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
 }
 
 .sidebar .voting {

@@ -97,7 +97,7 @@ $app = JFactory::getApplication();
             <div class="sidebar">
                 <div class="calendar">
                     <?php if ($this->countModules('position-7')): ?>
-                    <jdoc:include type="modules" name="position-7" style="none" />
+                    <jdoc:include type="modules" name="position-7" style="xhtml" />
                     <?php endif; ?>
                 </div>
                 <div class="voting">
