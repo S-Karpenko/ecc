@@ -77,11 +77,6 @@ a.mod_events_daylink
     color: #FFFFFF;
     font: bold 14px 'Tahoma';
 }
-a.mod_events_daylink:visited
-{
-	color: blue;
-	text-decoration: none;
-}
 a.mod_events_daylink:hover
 {
 	color: Silver;
