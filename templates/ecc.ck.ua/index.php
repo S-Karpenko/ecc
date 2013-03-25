@@ -119,6 +119,6 @@ $app = JFactory::getApplication();
 		</div>
 
 		<jdoc:include type="modules" name="debug" />
-	<div/>
+	</div>
     </body>
 </html>
