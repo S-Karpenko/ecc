@@ -49,10 +49,10 @@ $app = JFactory::getApplication();
         </div>
         <div class="buttons">
             <a id="facebook-button" class="fly-button" target="_blank" href="http://www.facebook.com/groups/500989506625626/"></a>
-            <a id="twitter-button" class="fly-button" target="_blank" href="#"></a>
+            <a id="twitter-button" class="fly-button" target="_blank" href="https://twitter.com/tatius181"></a>
             <a id="vkontakte-button" class="fly-button" target="_blank" href="http://vk.com/club51174283"></a>
             <a id="odnoklassniki-button" class="fly-button" target="_blank" href="http://www.odnoklassniki.ru/group/54565615829017/"></a>
-            <a id="youtube-button" class="fly-button" target="_blank" href="#"></a>
+            <a id="youtube-button" class="fly-button" target="_blank" href="http://www.youtube.com/user/ECC2013?feature=mhee"></a>
 
         </div>
 
