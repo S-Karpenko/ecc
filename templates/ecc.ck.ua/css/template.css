@@ -68,9 +68,19 @@ a:hover                        { text-decoration:none; }
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .header { 
-	height:97px; 
-	padding:25px 20px 30px 20px;}
-	
+	height: 125px;
+	padding: 13px 24px;
+}
+.header canvas{
+    float: left;
+}
+.header h1{
+    overflow: hidden;
+    width: 524px;
+    height: 128px;
+    background: url("../images/header_text.png") 0 0 no-repeat;
+}
+
 .header a img { 
 	text-indent:-1000em; }
 	
@@ -169,8 +179,8 @@ li.item107, li.item111  {
 	padding:16px 25px;}
 	
 .content .item-page {
-    width:730px;
-    height:250px;
+    overflow: hidden;
+    padding: 31px 29px;
     background-color:#F5FAF1;
     margin-bottom:10px;
 }
@@ -182,36 +192,15 @@ li.item107, li.item111  {
     margin-bottom:10px;
 	padding:30px 30px 40px 30px;
 }
+.article-info{
+    overflow: hidden;
+    margin: 0 0 15px 0;
+}
+.item-page img{
+    margin: 15px;
+}
 
 
-/*.post h3 {
-	font:24px "Trebuchet MS"; 
-	color:#5D99AD;
-	margin-bottom:25px;}
-		 
-.post img { 
-	 
-	margin-right:20px;
-	overflow:hidden;}
-	
-.post p {
-	font:14px Tahoma, Geneva, sans-serif; 
-	color:#737373;
-	padding-right:12px;
-	width:439px;
-	max-height:102px;
-	}
-	
-.post div a {
-	font:14px Tahoma, Geneva, sans-serif; 
-	color:#5D99AD;
-	padding-right:11px;
-	background:url(../images/background_a_post.gif) no-repeat right center;
-	float:right;
-	margin-right:365px; }
-
-.post a:hover { text-decoration:underline;}
-	*/
 /*- -------------------------------About-------------------------------------*/
 
 #content .contacts span.contacts {
@@ -462,7 +451,9 @@ a.oipopp:hover {
 /************************************************************************/
 /************************** HOMEPAGE CLASSES ****************************/
 /************************************************************************/
-.blog-featured h1{
+.blog-featured h1,
+h1.article-page,
+.blog h1{
     padding: 10px 0 0 31px;
     height: 40px;
     color: #FFFFFF;
@@ -478,10 +469,14 @@ a.oipopp:hover {
 .items-row .item{
     overflow: hidden;
 }
+.items-row .item img{
+    margin: 15px;
+}
 .item h2{
     margin: 0 0 25px 0;
 }
-.item h2 a{
+.item h2 a,
+.item-page h2 a{
     color: #5D9AAE;
     font-size: 20px;
     font-family: 'Arial';

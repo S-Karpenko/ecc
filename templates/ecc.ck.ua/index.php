@@ -42,7 +42,10 @@ $app = JFactory::getApplication();
     <div class="bg_cloud"></div>
     <div class="wrapper">
         <div class="header">
-            <a href="index.php" title="Experimental Creative Center"><img src="/images/logo.png" width="225" height="156" alt="Experimental Creative Center" /></a>
+            <canvas id="logoCanvas" width="197" height="98"></canvas>
+            <h1>
+
+            </h1>
         </div>
         <div class="buttons">
             <a id="facebook-button" class="fly-button" target="_blank" href="http://www.facebook.com/groups/500989506625626/"></a>
@@ -59,15 +62,7 @@ $app = JFactory::getApplication();
                 <jdoc:include type="modules" name="position-1" style="none" />
             <?php endif; ?>
         </div>
-    <!--share social
-        <div class="lrsharecontainer">
-            <script type="text/javascript">var islrsharing = true; var islrsocialcounter = false;</script>
-            <script type='text/javascript' src='//share.loginradius.com/Content/js/LoginRadius.js' id='lrsharescript'></script>
-            <script type="text/javascript"> LoginRadius.util.ready(function () { $i = $SS.Interface.Simplefloat; $SS.Providers.Top = ["Facebook","GooglePlus","Vkontakte","Twitter","Email"]; $u = LoginRadius.user_settings;
-                $u.apikey= 'e8d6b517-6244-42e3-a578-dfc85988ca2f';
-                $i.size = 32; $i.left = '50px'; $i.top = '300px';$i.show("lrsharecontainer"); });
-            </script>
- -->
+
 
 
 
