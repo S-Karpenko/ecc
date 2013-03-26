@@ -9,6 +9,8 @@ defined('_JEXEC') or die;
 
 /* The following line loads the MooTools JavaScript Library */
 JHtml::_('behavior.framework', true);
+$doc   = JFactory::getDocument();
+$doc->addScript($this->baseurl.'/templates/'.$this->template.'/js/lamp-animation.js', 'text/javascript', true);
 
 /* The following line gets the application object for things like displaying the site name */
 $app = JFactory::getApplication();
@@ -42,7 +44,7 @@ $app = JFactory::getApplication();
     <div class="bg_cloud"></div>
     <div class="wrapper">
         <div class="header">
-            <canvas id="logoCanvas" width="197" height="98"></canvas>
+            <canvas id="logoCanvas" width="197" height="109"></canvas>
             <h1>
 
             </h1>
