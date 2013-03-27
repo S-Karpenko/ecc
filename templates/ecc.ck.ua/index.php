@@ -11,7 +11,6 @@ defined('_JEXEC') or die;
 JHtml::_('behavior.framework', true);
 $doc = JFactory::getDocument();
 $doc->addScript($this->baseurl.'/templates/'.$this->template.'/js/lamp-animation.js', 'text/javascript', true);
-$doc->addScript($this->baseurl.'/templates/'.$this->template.'/js/jquery-1.9.1.min.js', 'text/javascript', true);
 
 /* The following line gets the application object for things like displaying the site name */
 $app = JFactory::getApplication();
@@ -35,6 +34,7 @@ $app = JFactory::getApplication();
 			<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/blueprint/plugins/rtl/screen.css" type="text/css" />
 			<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/template_rtl.css" type="text/css" />
 		<?php endif; ?>
+        <script type="text/javascript" src="<?php echo $this->baseurl?>/templates/<?php echo $this->template ?>/js/jquery-1.9.1.min.js"></script>
 
 		<!-- The following line loads the template JavaScript file located in the template folder. It's blank by default. -->
 
