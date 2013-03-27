@@ -9,7 +9,7 @@ defined('_JEXEC') or die;
 
 /* The following line loads the MooTools JavaScript Library */
 JHtml::_('behavior.framework', true);
-$doc   = JFactory::getDocument();
+$doc = JFactory::getDocument();
 $doc->addScript($this->baseurl.'/templates/'.$this->template.'/js/lamp-animation.js', 'text/javascript', true);
 
 /* The following line gets the application object for things like displaying the site name */
