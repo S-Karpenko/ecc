@@ -11,6 +11,7 @@ defined('_JEXEC') or die;
 JHtml::_('behavior.framework', true);
 $doc = JFactory::getDocument();
 $doc->addScript($this->baseurl.'/templates/'.$this->template.'/js/lamp-animation.js', 'text/javascript', true);
+$doc->addScript($this->baseurl.'/templates/'.$this->template.'/js/jquery-1.9.1.min.js', 'text/javascript', true);
 
 /* The following line gets the application object for things like displaying the site name */
 $app = JFactory::getApplication();
