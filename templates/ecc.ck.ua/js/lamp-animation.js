@@ -1,10 +1,10 @@
 var canvas = document.getElementById("logoCanvas");
 var ctx = canvas.getContext("2d");
 
-var OUTER_STAR = "img/out_star.png";
-var OUTER_NOTE = "img/out_note.png";
-var OUTER_GCIRCLE = "img/out_gcircle.png";
-var OUTER_PCIRCLE = "img/out_pcircle.png";
+var OUTER_STAR = "../images/out_star.png";
+var OUTER_NOTE = "../images/out_note.png";
+var OUTER_GCIRCLE = "../images/out_gcircle.png";
+var OUTER_PCIRCLE = "../images/out_pcircle.png";
 
 var outer_sparkles = [
 	function(){draw_image(OUTER_GCIRCLE, 45, 27)},
