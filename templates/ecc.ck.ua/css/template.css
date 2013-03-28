@@ -149,7 +149,7 @@ a:hover                        { text-decoration:none; }
 	
 .navbar li:hover ul {
 	display:block;}
-li.item107, li.item111  { 
+li.item107, li.item111, li.item164  {
 	-webkit-border-bottom-right-radius: 15px;
 	-webkit-border-bottom-left-radius: 15px;
 	-moz-border-radius-bottomright: 15px;
@@ -157,6 +157,7 @@ li.item107, li.item111  {
 	border-bottom-right-radius: 15px;
 	border-bottom-left-radius: 15px;
 	padding-bottom:2px;}
+
 
 /*-------------------------------------CONTENT--------------------------------------*/
 
