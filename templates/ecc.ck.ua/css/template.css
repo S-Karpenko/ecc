@@ -73,6 +73,9 @@ a:hover                        { text-decoration:none; }
 }
 .header canvas{
     float: left;
+    padding-top: 10px;
+    padding-right: 50px;
+    padding-left: 10px;
 }
 .header h1{
     overflow: hidden;
