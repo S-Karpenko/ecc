@@ -35,7 +35,9 @@ $app = JFactory::getApplication();
 			<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/template_rtl.css" type="text/css" />
 		<?php endif; ?>
         <script type="text/javascript" src="<?php echo $this->baseurl?>/templates/<?php echo $this->template ?>/js/jquery-1.9.1.min.js"></script>
-
+        <script type="text/javascript">
+            $.noConflict();
+        </script>
 		<!-- The following line loads the template JavaScript file located in the template folder. It's blank by default. -->
 
     </head>
