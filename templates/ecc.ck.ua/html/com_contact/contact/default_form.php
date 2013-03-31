@@ -53,7 +53,7 @@ JHtml::_('behavior.tooltip');
 			          <?php endif ?>
 			     <?php endforeach;?>
 				<dt></dt>
-				<dd><button class="button validate" type="submit"><?php echo JText::_('COM_CONTACT_CONTACT_SEND'); ?></button>
+				<dd><button class="btn btn-success btn-large" type="submit"><?php echo JText::_('COM_CONTACT_CONTACT_SEND'); ?></button>
 					<input type="hidden" name="option" value="com_contact" />
 					<input type="hidden" name="task" value="contact.submit" />
 					<input type="hidden" name="return" value="<?php echo $this->return_page;?>" />
