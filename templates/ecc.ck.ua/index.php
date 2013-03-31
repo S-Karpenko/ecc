@@ -25,6 +25,11 @@ $app = JFactory::getApplication();
 		<!-- The following five lines load the Blueprint CSS Framework (http://blueprintcss.org). If you don't want to use this framework, delete these lines. -->
 		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/blueprint/print.css" type="text/css" media="print" />
 		<!--[if lt IE 8]><link rel="stylesheet" href="blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+        
+        <!-- Bootstrap support-->
+        <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/bootstrap-responsive.min.css" type="text/css" />
+
 
 		<!-- The following line loads the template CSS file located in the template folder. -->
 		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/template.css" type="text/css" />
@@ -38,6 +43,7 @@ $app = JFactory::getApplication();
         <script type="text/javascript">
             $.noConflict();
         </script>
+        <script type="text/javascript" src="<?php echo $this->baseurl?>/templates/<?php echo $this->template ?>/js/bootstrap.min.js"></script>
 		<!-- The following line loads the template JavaScript file located in the template folder. It's blank by default. -->
 
     </head>
