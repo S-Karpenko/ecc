@@ -37,7 +37,7 @@ var animate_outer_sparkles = function(){
 	outer_frame++;
 };
 
-$(document).ready(function() {
+jQuery(document).ready(function() {
 	var bgImg = new Image();
 	bgImg.src = "/templates/ecc.ck.ua/images/lamp.png";
 	bgImg.onload = function() {
