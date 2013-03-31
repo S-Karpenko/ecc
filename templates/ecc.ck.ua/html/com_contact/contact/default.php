@@ -48,7 +48,7 @@ $cparams = JComponentHelper::getParams ('com_media');
         <?php endif; ?>
         <div class="contact-miscinfo">
             <div class="map">
-                <iframe width="450" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=%D0%A7%D0%B5%D1%80%D0%BA%D0%B0%D1%81%D1%81%D1%8B+%D0%93%D0%B0%D0%B9%D0%B4%D0%B0%D1%80%D0%B0+13&amp;hl=uk&amp;ie=UTF8&amp;sll=49.432877,32.000426&amp;sspn=0.008024,0.019805&amp;hnear=%D0%B2%D1%83%D0%BB.+%D0%93%D0%B0%D0%B9%D0%B4%D0%B0%D1%80%D0%B0,+13,+%D0%A7%D0%B5%D1%80%D0%BA%D0%B0%D1%81%D0%B8,+%D0%A7%D0%B5%D1%80%D0%BA%D0%B0%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B0&amp;t=m&amp;hq=&amp;z=14&amp;ll=49.432859,32.000406&amp;output=embed"></iframe><br /><small></small>
+                <iframe width="450" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=uk&amp;geocode=&amp;q=%D0%A7%D0%B5%D1%80%D0%BA%D0%B0%D1%81%D1%81%D1%8B+%D1%81%D0%BC%D1%96%D0%BB%D1%8F%D0%BD%D1%81%D1%8C%D0%BA%D1%83+113%2F2&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=39.916234,81.123047&amp;ie=UTF8&amp;hq=&amp;hnear=%D0%A1%D0%BC%D1%96%D0%BB%D1%8F%D0%BD%D1%81%D1%8C%D0%BA%D0%B0+%D0%B2%D1%83%D0%BB.,+113,+%D0%A7%D0%B5%D1%80%D0%BA%D0%B0%D1%81%D0%B8,+%D0%A7%D0%B5%D1%80%D0%BA%D0%B0%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B0&amp;t=m&amp;z=14&amp;iwloc=A&amp;ll=49.425504,32.04442&amp;output=embed"></iframe>
             </div>
             <div class="<?php echo $this->params->get('marker_class'); ?>">
                 <?php echo $this->params->get('marker_misc'); ?>
