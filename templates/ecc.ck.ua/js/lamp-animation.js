@@ -1,10 +1,10 @@
 var canvas = document.getElementById("logoCanvas");
 var ctx = canvas.getContext("2d");
 
-var OUTER_STAR = "templates/ecc.ck.ua/images/out_star.png";
-var OUTER_NOTE = "templates/ecc.ck.ua/images/out_note.png";
-var OUTER_GCIRCLE = "templates/ecc.ck.ua/images/out_gcircle.png";
-var OUTER_PCIRCLE = "templates/ecc.ck.ua/images/out_pcircle.png";
+var OUTER_STAR = "/templates/ecc.ck.ua/images/out_star.png";
+var OUTER_NOTE = "/templates/ecc.ck.ua/images/out_note.png";
+var OUTER_GCIRCLE = "/templates/ecc.ck.ua/images/out_gcircle.png";
+var OUTER_PCIRCLE = "/templates/ecc.ck.ua/images/out_pcircle.png";
 
 var outer_sparkles = [
 	function(){draw_image(OUTER_GCIRCLE, 45, 27)},
@@ -37,9 +37,9 @@ var animate_outer_sparkles = function(){
 	outer_frame++;
 };
 
-$(document).ready(function() {
+jQuery(document).ready(function() {
 	var bgImg = new Image();
-	bgImg.src = "templates/ecc.ck.ua/images/lamp.png";
+	bgImg.src = "/templates/ecc.ck.ua/images/lamp.png";
 	bgImg.onload = function() {
 		ctx.drawImage(bgImg, 0, 0);
 		window.setInterval(animate_outer_sparkles, 150);
