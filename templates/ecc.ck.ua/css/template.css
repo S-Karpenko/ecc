@@ -560,6 +560,18 @@ textarea.invalid{
 }
 
 
+/****************************************************/
+/************* JEvents Articles classes *************/
+/****************************************************/
+.articles-title{
+    margin: 0 0 10px 0;
+}
+body .article-link{
+    font: bold 14px 'Tahoma';
+}
+.article-link:hover{
+    text-decoration: underline;
+}
 
 /*******************************************/
 /************* SYSTEM MESSAGES *************/

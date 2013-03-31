@@ -701,6 +701,28 @@ class JEventsDataModel {
 		return $data;
 	}
 
+    function  getDayArticles($year, $month, $day) {
+        $cats = array( "2", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18");
+        $db = & JFactory::getDbo();
+        $query = $db->getQuery(true);
+
+        $query->select("*")
+            ->from("#__content")
+            ->where("catid in (".implode(",", $cats).")")
+            ->where("YEAR(publish_up) = ".$year)
+            ->where("MONTH(publish_up) = ".$month)
+            ->where("DAY(publish_up) = ".$day)
+            ->where("state = 1");
+
+        $db->setQuery((string)$query);
+        if (!$db->query()) {
+            JError::raiseError(500, $db->getErrorMsg());
+        }
+        $arts = $db->loadObjectList();
+
+        return $arts;
+    }
+
 	function getEventData( $rpid, $jevtype, $year, $month, $day, $uid="" ) {
 		$data = array();
 

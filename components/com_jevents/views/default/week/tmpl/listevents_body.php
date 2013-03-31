@@ -1,4 +1,4 @@
-<?php 
+<?php
 defined('_JEXEC') or die('Restricted access');
 
 $cfg	 = & JEVConfig::getInstance();
