@@ -31,9 +31,9 @@ if( $num_events > 0 ){
 			$date =JEventsHTML::getDateFormat( $row->yup(), $row->mup(), $row->dup(), 1 );
             $result = $r%2;
             if ($result === 0) {
-                echo '<tr class="odd"><td class="ev_td_left">'.$date.'</td>' . "\n";
+                echo '<tr class="odd">' . "\n";
             } else {
-                echo '<tr><td class="ev_td_left">'.$date.'</td>' . "\n";
+                echo '<tr>' . "\n";
             }
 			echo '<td align="left" valign="top" class="ev_td_right"><ul class="ev_ul">' . "\n";
 		}
