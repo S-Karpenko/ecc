@@ -49,7 +49,7 @@ for ($h=0;$h<24;$h++){
                 $hasevents = true;
 		$start_time = JEVHelper::getTime($data['hours'][$h]['hour_start']);
 
-		echo '<tr><td class="ev_td_left">' . $start_time . '</td>' . "\n";
+		echo '<tr>' . "\n";
 		echo '<td class="ev_td_right"><ul class="ev_ul">' . "\n";
 		foreach ($data['hours'][$h]['events'] as $row) {
 			$listyle = 'style="border-color:'.$row->bgcolor().';"';
