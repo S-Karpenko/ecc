@@ -21,7 +21,7 @@ $lang_file->load('com_acepolls', JPATH_SITE);
 // Include the syndicate functions only once
 require_once (dirname(__FILE__).DS.'helper.php');
 
-$tabclass_arr = array ('sectiontableentry2', 'sectiontableentry1');
+$tabclass_arr = array ('sectiontableentry2 radio', 'sectiontableentry1 radio');
 
 $menu 		= &JSite::getMenu();
 $items		= $menu->getItems('link', 'index.php?option=com_acepolls&view=poll');
