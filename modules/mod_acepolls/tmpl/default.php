@@ -49,8 +49,8 @@ $document->addStyleDeclaration("div#poll_loading_".$poll->id." {
 				echo '</div>';
 			endif;
 	?>
-	<div style="padding:2px;" id="poll_buttons_<?php echo $poll->id;?>" >	
-	<input type="submit" id="submit_vote_<?php echo $poll->id; ?>" name="task_button" class="button" value="<?php echo JText::_('MOD_ACEPOLLS_VOTE'); ?>" <?php echo $disabled; ?> />
+	<div style="padding:2px; text-align:center;" id="poll_buttons_<?php echo $poll->id;?>" >	
+	<input type="submit" id="submit_vote_<?php echo $poll->id; ?>" name="task_button" class="btn btn-primary btn-success" value="<?php echo JText::_('MOD_ACEPOLLS_VOTE'); ?>" <?php echo $disabled; ?> />
 	</div>	
 	<div id="poll_loading_<?php echo $poll->id;?>" style="display:none;"><?php echo JText::_('MOD_ACEPOLLS_PROCESSING'); ?>
 	</div>		
