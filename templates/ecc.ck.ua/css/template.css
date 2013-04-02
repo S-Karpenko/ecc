@@ -474,17 +474,20 @@ a.oipopp:hover {
     width: 17px;
     height: 17px;
     margin: 0 8px 0 0;
+    font-family: 'Arial';
+    font-weight: bold;
 }
 
-.pagination ul > li > a:hover,
-.pagination ul > li > a:focus,
-.pagination ul > .active > a,
-.pagination ul > .active > span {
-  background-color: transparent;
+.pagination a,
+.pagination ul li a:hover,
+.pagination ul li a:focus,
+.pagination ul .active a,
+.pagination ul .active span {
+    background-color: transparent;
+    color: #5D9AAE;
 }
 
 .pagination span{
-    color: #5D9AAE;
     font-family: 'Arial';
     font-weight: bold;
 }
