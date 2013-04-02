@@ -199,7 +199,7 @@ class plgContentSocButtons extends JPlugin
 			
 			$html .= '<div style="clear:both;"></div>';
 			$html .= '<style>.soc_no a{color:#d6d6d6; font-size:8px;} .soc_yes a{color:#d6d6d6; font-size:8px;display:none;}</style>';
-			$html .= '<div class="'.$soc_copr.'"><a href="http://jsocial.ru/" title="SocButtons v1.5" target="_blank">SocButtons v1.5</a></div>';
+			$html .= '<div class="'.$soc_copr.'"><a href="http://socext.com/download/socbuttons.html" title="SocButtons v1.5" target="_blank">SocButtons v1.5</a></div>';
 			$html .= '</div>';
 			$html .= '<div style="clear:both;"></div>';
 			//end plugin
