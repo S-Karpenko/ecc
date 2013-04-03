@@ -30,9 +30,9 @@ function DefaultViewHelperHeader16($view){
 ?>
 <div class="contentpaneopen jeventpagetitle<?php echo $params->get( 'pageclass_sfx' ); ?>" id="jevents_header">
 	<?php if ($params->get('show_page_heading', 0)) : ?>
-	<h1>
+	<h2 class="page-title">
 		<?php echo $view->escape($params->get('page_heading')); ?>
-	</h1>
+	</h2>
 	<?php endif; ?>
 	<?php
 	$t_headline = '&nbsp;';
