@@ -579,7 +579,10 @@ textarea.invalid{
     border: 1px red solid;
     color: red;
 }
-
+#jform_contact_message{
+    resize: none;
+    width: 500px;
+}
 
 /****************************************************/
 /************* JEvents Articles classes *************/
