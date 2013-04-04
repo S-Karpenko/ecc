@@ -53,7 +53,9 @@ $app = JFactory::getApplication();
     <div class="bg_cloud"></div>
     <div class="wrapper">
         <div class="header">
-            <canvas id="logoCanvas" width="197" height="109"></canvas>
+            <a href="/">
+                <canvas id="logoCanvas" width="197" height="109"></canvas>
+            </a>
             <h1>
 
             </h1>
