@@ -497,17 +497,18 @@ a.oipopp:hover {
 /************************************************************************/
 /************************** HOMEPAGE CLASSES ****************************/
 /************************************************************************/
-.page-title,
-.page-title a{
+.page-title{
     padding: 10px 0 0 31px;
-    height: 40px;
+    color: #FFFFFF;
+    min-height: 40px;
+    font: bold 24px 'Arial';
+    text-transform: uppercase;
+    background: #76AB2F url("../images/homepage_title.jpg") 0 0 no-repeat;
+}
+.page-title a{
     color: #FFFFFF;
     font: bold 24px 'Arial';
     text-transform: uppercase;
-    background: url("../images/homepage_title.png") 0 0 no-repeat;
-}
-.page-title a{
-    padding: 0;
 }
 .items-row{
     padding: 30px 30px 0 30px;
