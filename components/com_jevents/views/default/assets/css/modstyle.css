@@ -41,12 +41,15 @@
 .mod_events_td_todaynoevents
 {
 	font-size: 12px;
+    background: #7BB133;
 }
 .mod_events_td_todaywithevents
 {
-	font-weight: normal;
-	color: Black;
-	background-color: #B0C4DE;
+    background: #7BB133;
+}
+.mod_events_td_todaynoevents a.mod_events_daylink,
+.mod_events_td_todaywithevents a.mod_events_daylink{
+    color: #FFFFFF;
 }
 .mod_events_td_daynoevents
 {
