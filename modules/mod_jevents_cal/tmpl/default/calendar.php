@@ -233,9 +233,9 @@ class DefaultModCalView
 			$content = '<td>';
             $link_image = '';
             if ($symbol == "&lt;") {
-                $link_image = '<img src="/templates/ecc.ck.ua/images/month_prev.jpg" alt="Попередній місяць" />';
+                $link_image = '<img src="/templates/ecc/images/month_prev.jpg" alt="Попередній місяць" />';
             } else if ($symbol == "&gt;") {
-                $link_image = '<img src="/templates/ecc.ck.ua/images/month_next.jpg" alt="Наступний місяць" />';
+                $link_image = '<img src="/templates/ecc/images/month_next.jpg" alt="Наступний місяць" />';
             }
 			$content .= '<div class="mod_events_link" onmousedown="callNavigation(\''.$link.'\');">'.$link_image."</div>\n";
 			$content .= '</td>';
