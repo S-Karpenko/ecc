@@ -122,7 +122,9 @@ a:hover                        { text-decoration:none; }
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
-	text-transform:uppercase;}
+	text-transform:uppercase;
+    outline: none;
+}
 	
 .navbar ul li a.game {
 	 width:124px;
