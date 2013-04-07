@@ -61,7 +61,7 @@
     border: 1px #E6E6E6 solid;
 }
 .mod_events_td_todayarticles{
-    background: #F187A3;
+    background: #e5097f;
 }
 .mod_events_td_todayarticles .mod_events_daylink{
     color: #FFFFFF;
@@ -81,7 +81,7 @@
 {
 	font-weight: normal;
 	color: Black;
-    background: #66FF00;
+    background: #7CB334;
 }
 
 a.mod_events_daylink
