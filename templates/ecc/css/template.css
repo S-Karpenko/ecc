@@ -573,6 +573,9 @@ a.oipopp:hover {
 .contact-form{
     margin: 15px 0;
 }
+.contact-form legend{
+    font-size: 14px;
+}
 label.invalid,
 label.invalid span{
     color: red;
