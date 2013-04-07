@@ -586,6 +586,9 @@ textarea.invalid{
     resize: none;
     width: 500px;
 }
+button.btn.btn-large, input.btn.btn-large[type="submit"] {
+    margin: 15px 0 0 100px;
+}
 
 /****************************************************/
 /************* JEvents Articles classes *************/
