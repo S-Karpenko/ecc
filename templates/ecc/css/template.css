@@ -575,6 +575,7 @@ a.oipopp:hover {
 }
 .contact-form legend{
     font-size: 14px;
+    line-height: 30px;
 }
 label.invalid,
 label.invalid span{
