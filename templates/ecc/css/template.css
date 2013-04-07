@@ -584,7 +584,7 @@ textarea.invalid{
 }
 #jform_contact_message{
     resize: none;
-    width: 500px;
+    width: 450px;
 }
 button.btn.btn-large, input.btn.btn-large[type="submit"] {
     margin: 15px 0 0 100px;
