@@ -1282,6 +1282,27 @@ $dbend = (float)$usec + (float)$sec;
 
 	}
 
+    function articlesList($year, $month){
+        $db = & JFactory::getDbo();
+
+        $query = $db->getQuery(true);
+        $query->select('id, publish_up, DAY(publish_up) as publish_day')
+            ->from('#__content')
+            ->where('YEAR(publish_up) = '.$year)
+            ->where('MONTH(publish_up) = '.$month)
+            ->where('state = 1')
+            ->order('publish_up ASC');
+
+        $db->setQuery((string)$query);
+        if (!$db->query()) {
+            JError::raiseError(500, $db->getErrorMsg());
+        }
+        $arts = $db->loadObjectList();
+
+        return $arts;
+
+    }
+
 	function _cachedlistIcalEvents($query, $langtag, $count=false)
 	{
 		$user = JFactory::getUser();

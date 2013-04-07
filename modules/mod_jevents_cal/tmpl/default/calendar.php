@@ -388,10 +388,22 @@ class DefaultModCalView
 						break;
 					case "current":
 						if ($currentDay["events"] || $this->modparams->get("noeventcheck",0)){
-							$class = ($currentDay["cellDate"] == $today) ? "mod_events_td_todaywithevents" : "mod_events_td_daywithevents";
+                            if ($currentDay['cellDate'] == $today) {
+                                $class = "mod_events_td_todaywithevents";
+                            } else if ($currentDay["articles"]) {
+                                $class = "mod_events_td_todayeventsarticles";
+                            } else {
+                                $class = "mod_events_td_daywithevents";
+                            }
 						}
 						else {
-							$class = ($currentDay["cellDate"] == $today) ? "mod_events_td_todaynoevents" : "mod_events_td_daynoevents";
+                            if ($currentDay['cellDate'] == $today) {
+                                $class = "mod_events_td_todaynoevents";
+                            } else if ($currentDay["articles"]) {
+                                $class = "mod_events_td_todayarticles";
+                            } else {
+                                $class = "mod_events_td_daynoevents";
+                            }
 						}
 						$content .= "<td class='".$class."'>\n";
 						$content .= $this->htmlLinkCloaking($currentDay["link"], $currentDay['d'], array('class'=>"mod_events_daylink",'title'=> JText::_('JEV_CLICK_TOSWITCH_DAY')));

@@ -60,6 +60,20 @@
 	color: Black;
     border: 1px #E6E6E6 solid;
 }
+.mod_events_td_todayarticles{
+    background: #F187A3;
+}
+.mod_events_td_todayarticles .mod_events_daylink{
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.mod_events_td_todayeventsarticles{
+    background: url("/templates/ecc/images/two_colored_sq.jpg") 0 0 no-repeat;
+}
+.mod_events_td_todayeventsarticles .mod_events_daylink{
+    color: #FFFFFF;
+    font-weight: bold;
+}
 .mod_events_td_daynoevents .mod_events_daylink{
     font: 12px 'Tahoma';
 }
@@ -67,7 +81,7 @@
 {
 	font-weight: normal;
 	color: Black;
-    background: #7BB133;
+    background: #66FF00;
 }
 
 a.mod_events_daylink

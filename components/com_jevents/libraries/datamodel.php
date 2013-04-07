@@ -237,6 +237,7 @@ class JEventsDataModel {
 		else {
 			$rows = array();
 		}
+        $articles = $this->queryModel->articlesList($year, $month);
 		$rowcount = count( $rows );
 
 		if (strlen($this->catidsOut)>0) {
@@ -346,6 +347,12 @@ class JEventsDataModel {
 				$data["dates"][$dayCount]["today"]=false;
 			}
 
+            foreach($articles as $item){
+                if ($item->publish_day == $d) {
+                    $data["dates"][$dayCount]["articles"] = true;
+                }
+            }
+            
 			if( $d <= '9') {
 				$do = '0' . $d;
 			} else {
@@ -450,7 +457,6 @@ class JEventsDataModel {
 
 		return $data;
 	}
-
 
 	function getYearData($year, $limit, $limitstart )
 	{
