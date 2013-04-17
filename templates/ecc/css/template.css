@@ -50,7 +50,7 @@ a:hover                        { text-decoration:none; }
 .bg_blue {
     background: url("../images/background_blue.jpg") repeat scroll 0 0 transparent;
     bottom: 284px;
-    height: 608px;
+    height: 658px;
     position: absolute;
     top: 277px;
     width: 100%;
@@ -505,7 +505,7 @@ a.oipopp:hover {
     min-height: 40px;
     font: bold 24px 'Arial';
     text-transform: uppercase;
-    background: #76AB2F url("../images/homepage_title.jpg") 0 0 no-repeat;
+    background: url("../images/homepage_title.jpg") 0 0 no-repeat;
 }
 .page-title a{
     color: #FFFFFF;
