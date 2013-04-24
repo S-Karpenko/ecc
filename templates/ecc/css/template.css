@@ -313,6 +313,8 @@ button.button {
     color: #5D9AAE;
     font-family: 'Arial';
     font-size: 22px;
+    text-align: center;
+    padding-top: 15px;
 }
 .partners li{
     float:left;
