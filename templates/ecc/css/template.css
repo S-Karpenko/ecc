@@ -156,7 +156,7 @@ a:hover                        { text-decoration:none; }
 	
 .navbar li:hover ul {
 	display:block;}
-li.item107, li.item111, li.item165  {
+li.item166, li.item111, li.item165  {
 	-webkit-border-bottom-right-radius: 15px;
 	-webkit-border-bottom-left-radius: 15px;
 	-moz-border-radius-bottomright: 15px;
