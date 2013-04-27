@@ -277,8 +277,14 @@ class DefaultModCalView
 			$basefirst_of_month   = JevDate::mktime(0,0,0,$requestMonth, $requestDay, $requestYear);
 		}
 		else {
-			$cal_year=date("Y",$time);
-			$cal_month=date("m",$time);
+            if ($requestYear && $requestMonth) {
+                $cal_year= $requestYear;
+                $cal_month=$requestMonth;
+            } else {
+                $cal_year=date("Y",$time);
+                $cal_month=date("m",$time);
+            }
+
 		}
 
 		$reg =& JFactory::getConfig();
@@ -372,15 +378,13 @@ class DefaultModCalView
 
 		$datacount = count($data["dates"]);
 		$dn=0;
+
 		for ($w=0;$w<6 && $dn<$datacount;$w++){
 			$content .="<tr>\n";
-			/*
-			echo "<td width='2%' class='cal_td_weeklink'>";
-			list($week,$link) = each($data['weeks']);
-			echo "<a href='".$link."'>$week</a></td>\n";
-			*/
+
 			for ($d=0;$d<7 && $dn<$datacount;$d++){
 				$currentDay = $data["dates"][$dn];
+
 				switch ($currentDay["monthType"]){
 					case "prior":
 					case "following":
